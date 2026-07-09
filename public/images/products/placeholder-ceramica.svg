@@ -1,0 +1,9 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#F4EEE4"/>
+  <circle cx="330" cy="250" r="170" fill="#D8B79C" opacity=".35"/>
+  <ellipse cx="610" cy="545" rx="245" ry="135" fill="#B97859" opacity=".3"/>
+  <path d="M436 312c0-72 58-130 130-130h60c72 0 130 58 130 130v202c0 72-58 130-130 130h-60c-72 0-130-58-130-130V312Z" fill="#F9F5ED" stroke="#7A513C" stroke-width="10"/>
+  <path d="M755 360h54c58 0 105 47 105 105s-47 105-105 105h-54" stroke="#7A513C" stroke-width="28" stroke-linecap="round"/>
+  <path d="M482 336c77 28 153 28 230 0" stroke="#A8664A" stroke-width="12" stroke-linecap="round"/>
+  <text x="600" y="785" text-anchor="middle" font-family="Georgia, serif" font-size="38" fill="#4B4038">Imagen de pieza Alhua</text>
+</svg>

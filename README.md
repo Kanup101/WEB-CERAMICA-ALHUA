@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Alhua Ceramica Creativa
 
-## Getting Started
+Web ecommerce inicial para una marca de ceramica artesanal premium: landing, tienda estatica, detalle de piezas, talleres online, historia de marca, contacto y carrito visual.
 
-First, run the development server:
+## Stack
+
+- Next.js con App Router
+- TypeScript
+- Tailwind CSS
+- Componentes UI estilo shadcn/ui
+- Lucide React
+- Datos mock en TypeScript
+
+## Comandos
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run lint
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+La app corre por defecto en `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+En PowerShell con politica de scripts restringida puede ser necesario usar:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm.cmd run dev
+```
 
-## Learn More
+## Estructura principal
 
-To learn more about Next.js, take a look at the following resources:
+```text
+src/app/                 Rutas App Router
+src/components/          Componentes reutilizables
+src/contexts/            CartContext cliente
+src/data/                Productos y talleres mock
+src/lib/payments/        Placeholders Mercado Pago y Stripe
+src/lib/i18n/            Config base para futuro idioma ingles
+src/types/               Tipos de producto, taller y carrito
+public/images/           Placeholders locales reemplazables
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Funcionalidad incluida
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Home con hero, piezas destacadas, talleres, historia, proceso y newsletter visual.
+- Tienda con grilla, filtros por categoria y orden visual.
+- Detalle de pieza con galeria, ficha tecnica, cuidados, stock y relacionados.
+- Talleres y detalle de taller con informacion completa.
+- Sobre Alhua y Contacto con FAQ.
+- Carrito cliente con agregar, quitar, cambiar cantidad y total.
+- Checkout placeholder.
+- SEO inicial por paginas principales.
 
-## Deploy on Vercel
+## Proximas etapas
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Reemplazar placeholders por fotografia real optimizada.
+- Conectar productos y talleres a CMS o base de datos.
+- Integrar checkout real con Mercado Pago para Argentina.
+- Preparar Stripe para ventas internacionales.
+- Agregar autenticacion/admin para cargar stock y precios.
+- Implementar i18n completo `es/en`.
+- Sumar emails transaccionales y formularios con backend.

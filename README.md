@@ -68,8 +68,22 @@ public/images/           Placeholders locales reemplazables
 - Talleres y detalle de taller con informacion completa.
 - Sobre Alhua y Contacto con FAQ.
 - Carrito cliente con agregar, quitar, cambiar cantidad y total.
-- Checkout placeholder.
+- Carrito persistente con `localStorage`.
+- Checkout placeholder con resumen y consulta por WhatsApp.
 - SEO inicial por paginas principales.
+- Script de conversion de imagenes reales a WEBP con `sharp`.
+
+## Imagenes
+
+Las imagenes originales se colocan en `public/images/originales/`, carpeta ignorada por Git.
+
+Para convertir JPG, JPEG o PNG a WEBP optimizado:
+
+```bash
+npm run images:convert
+```
+
+Las WEBP finales quedan en `public/images/products/` y son las que debe usar la web.
 
 ## Configuracion sensible
 

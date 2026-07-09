@@ -1,15 +1,14 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { Minus, Plus, ShoppingBag, Trash2, X } from "lucide-react";
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import { useCart } from "@/contexts/CartContext";
 import { formatARS } from "@/lib/utils";
+import { useState } from "react";
 
 export function CartDrawer() {
   const [open, setOpen] = useState(false);
-  const [checkoutMessage, setCheckoutMessage] = useState(false);
   const { items, totalARS, totalItems, removeItem, updateQuantity } = useCart();
 
   return (
@@ -62,7 +61,12 @@ export function CartDrawer() {
                       </div>
                       <div className="min-w-0 flex-1">
                         <h3 className="truncate font-medium text-[#342A24]">{item.product.name}</h3>
-                        <p className="text-sm text-[#8B6E54]">{formatARS(item.product.priceARS)}</p>
+                        <p className="text-sm text-[#8B6E54]">
+                          {formatARS(item.product.priceARS)} por unidad
+                        </p>
+                        <p className="mt-1 text-sm font-semibold text-[#342A24]">
+                          Subtotal {formatARS(item.product.priceARS * item.quantity)}
+                        </p>
                         <div className="mt-3 flex items-center justify-between">
                           <div className="inline-flex items-center rounded-full border border-[#D8C3AA]">
                             <button
@@ -108,19 +112,18 @@ export function CartDrawer() {
                 <span>Total</span>
                 <span>{formatARS(totalARS)}</span>
               </div>
-              <Button
-                className="mt-4 w-full"
-                size="lg"
-                disabled={!items.length}
-                onClick={() => setCheckoutMessage(true)}
+              <Link
+                href="/checkout"
+                onClick={() => setOpen(false)}
+                aria-disabled={!items.length}
+                className={`mt-4 inline-flex h-12 w-full items-center justify-center rounded-full px-6 text-base font-medium transition ${
+                  items.length
+                    ? "bg-[#6F4A39] text-[#FFF9EF] hover:bg-[#593A2D]"
+                    : "pointer-events-none bg-[#D8C3AA] text-[#FFF9EF]"
+                }`}
               >
                 Finalizar compra
-              </Button>
-              {checkoutMessage ? (
-                <p className="mt-3 rounded-2xl bg-[#F0E5D6] p-3 text-center text-sm text-[#6F4A39]">
-                  Checkout proximamente. Por ahora coordinamos la compra por WhatsApp.
-                </p>
-              ) : null}
+              </Link>
             </div>
           </aside>
         </div>

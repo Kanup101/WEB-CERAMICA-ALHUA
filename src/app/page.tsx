@@ -17,7 +17,7 @@ export default function Home() {
     <div>
       <section className="relative overflow-hidden bg-[#F4E8D9]">
         <div className="absolute inset-0 opacity-40">
-          <Image src="/images/products/placeholder-ceramica.svg" alt="" fill priority className="object-cover" sizes="100vw" />
+          <Image src="/images/products/paisaje-2.webp" alt="" fill priority className="object-cover" sizes="100vw" />
         </div>
         <div className="relative mx-auto flex min-h-[680px] max-w-7xl items-end px-4 py-20 sm:px-6 lg:px-8">
           <div className="max-w-3xl">

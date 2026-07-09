@@ -1,6 +1,8 @@
 # Alhua Ceramica Creativa
 
-Web ecommerce inicial para una marca de ceramica artesanal premium: landing, tienda estatica, detalle de piezas, talleres online, historia de marca, contacto y carrito visual.
+Primera version estable de la web ecommerce inicial para una marca de ceramica artesanal premium.
+
+Incluye landing, tienda estatica, detalle de piezas, talleres online, historia de marca, contacto, carrito visual del lado del cliente y arquitectura preparada para integrar pagos, CMS y base de datos en etapas posteriores.
 
 ## Stack
 
@@ -11,13 +13,16 @@ Web ecommerce inicial para una marca de ceramica artesanal premium: landing, tie
 - Lucide React
 - Datos mock en TypeScript
 
-## Comandos
+## Instalacion
 
 ```bash
 npm install
+```
+
+## Desarrollo
+
+```bash
 npm run dev
-npm run lint
-npm run build
 ```
 
 La app corre por defecto en `http://localhost:3000`.
@@ -26,6 +31,20 @@ En PowerShell con politica de scripts restringida puede ser necesario usar:
 
 ```bash
 npm.cmd run dev
+```
+
+## Calidad y build
+
+```bash
+npm run lint
+npm run build
+```
+
+Equivalentes recomendados en Windows/PowerShell:
+
+```bash
+npm.cmd run lint
+npm.cmd run build
 ```
 
 ## Estructura principal
@@ -51,6 +70,10 @@ public/images/           Placeholders locales reemplazables
 - Carrito cliente con agregar, quitar, cambiar cantidad y total.
 - Checkout placeholder.
 - SEO inicial por paginas principales.
+
+## Configuracion sensible
+
+No se incluyen claves reales ni variables sensibles. Los archivos `.env*`, builds y dependencias locales quedan excluidos por `.gitignore`.
 
 ## Proximas etapas
 

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fff9ef;
+  --background: #f1d2c0;
   --foreground: #342a24;
 }
 
@@ -29,4 +29,9 @@ html {
 
 .font-serif {
   font-family: Georgia, "Times New Roman", serif;
+}
+
+.font-brand {
+  font-family: "Cormorant Garamond", "Playfair Display", Georgia, "Times New Roman", serif;
+  letter-spacing: 0.01em;
 }

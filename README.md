@@ -1,6 +1,6 @@
-# Alhua Ceramica Creativa
+# Yanina Cardozo | Ceramica Creativa
 
-Primera version estable de la web ecommerce inicial para una marca de ceramica artesanal premium.
+Primera version estable de la web ecommerce inicial para Yanina Cardozo, artista ceramista.
 
 Incluye landing, tienda estatica, detalle de piezas, talleres online, historia de marca, contacto, carrito visual del lado del cliente y arquitectura preparada para integrar pagos, CMS y base de datos en etapas posteriores.
 
@@ -66,7 +66,7 @@ public/images/           Placeholders locales reemplazables
 - Tienda con grilla, filtros por categoria y orden visual.
 - Detalle de pieza con galeria, ficha tecnica, cuidados, stock y relacionados.
 - Talleres y detalle de taller con informacion completa.
-- Sobre Alhua y Contacto con FAQ.
+- Sobre Yanina y Contacto con FAQ.
 - Carrito cliente con agregar, quitar, cambiar cantidad y total.
 - Carrito persistente con `localStorage`.
 - Checkout placeholder con resumen y consulta por WhatsApp.

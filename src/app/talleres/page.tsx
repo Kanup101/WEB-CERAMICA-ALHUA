@@ -4,9 +4,9 @@ import { WorkshopCard } from "@/components/workshops/WorkshopCard";
 import { workshops } from "@/data/workshops";
 
 export const metadata: Metadata = {
-  title: "Talleres online de ceramica artesanal",
+  title: "Talleres online de ceramica | Yanina Cardozo",
   description:
-    "Talleres online de ceramica creativa para aprender tecnicas manuales, esmaltes y piezas utilitarias desde Argentina.",
+    "Talleres online de ceramica creativa con Yanina Cardozo para aprender tecnicas manuales, esmaltes y piezas utilitarias desde Argentina.",
 };
 
 export default function WorkshopsPage() {

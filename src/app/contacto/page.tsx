@@ -7,9 +7,9 @@ import { Button } from "@/components/ui/button";
 import { contactInfo } from "@/lib/contact";
 
 export const metadata: Metadata = {
-  title: "Contacto | Alhua Ceramica Creativa",
+  title: "Contacto | Yanina Cardozo",
   description:
-    "Contacta a Alhua Ceramica Creativa por piezas unicas de ceramica artesanal, talleres online, envios y consultas por WhatsApp o Instagram.",
+    "Contacta a Yanina Cardozo por piezas unicas de ceramica artesanal, talleres online, envios y consultas por WhatsApp o Instagram.",
 };
 
 export default function ContactPage() {
@@ -45,7 +45,7 @@ export default function ContactPage() {
             <Button type="button" size="lg" disabled title="Formulario visual sin backend por ahora">
               Enviar consulta
             </Button>
-            <WhatsAppButton message="Hola Alhua, quiero hacer una consulta." />
+            <WhatsAppButton message="Hola Yanina, quiero hacer una consulta." />
           </div>
           <p className="mt-3 text-sm text-[#8B6E54]">
             Formulario visual sin backend real por ahora. Para consultas reales, usar WhatsApp o email.
@@ -58,8 +58,12 @@ export default function ContactPage() {
             <div className="mt-5 space-y-4 text-sm text-[#6C5C50]">
               <p className="flex items-center gap-3"><MapPin className="h-5 w-5 text-[#8F5F45]" aria-hidden="true" /> {contactInfo.location}</p>
               <a className="flex items-center gap-3 hover:text-[#6F4A39]" href={`mailto:${contactInfo.email}`}><Mail className="h-5 w-5 text-[#8F5F45]" aria-hidden="true" /> {contactInfo.email}</a>
-              <a className="flex items-center gap-3 hover:text-[#6F4A39]" href={contactInfo.instagramUrl} target="_blank" rel="noreferrer"><Camera className="h-5 w-5 text-[#8F5F45]" aria-hidden="true" /> {contactInfo.instagramHandle}</a>
-              <p className="flex items-start gap-3"><MessageCircle className="mt-0.5 h-5 w-5 text-[#8F5F45]" aria-hidden="true" /> {contactInfo.whatsappLabel}</p>
+              {contactInfo.instagramUrl ? (
+                <a className="flex items-center gap-3 hover:text-[#6F4A39]" href={contactInfo.instagramUrl} target="_blank" rel="noreferrer"><Camera className="h-5 w-5 text-[#8F5F45]" aria-hidden="true" /> {contactInfo.instagramHandle}</a>
+              ) : (
+                <p className="flex items-center gap-3"><Camera className="h-5 w-5 text-[#8F5F45]" aria-hidden="true" /> {contactInfo.instagramHandle}</p>
+              )}
+              <p className="flex items-start gap-3"><MessageCircle className="mt-0.5 h-5 w-5 text-[#8F5F45]" aria-hidden="true" /> {contactInfo.whatsappLabel}: {contactInfo.phoneDisplay}</p>
             </div>
           </div>
           <FAQAccordion />

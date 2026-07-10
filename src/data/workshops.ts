@@ -14,6 +14,12 @@ export const workshops: Workshop[] = [
     modality: "Online en vivo + grabaciones por 30 dias",
     level: "Inicial",
     image: "/images/products/barro-2.webp",
+    videoUrl: "",
+    videoType: "local",
+    videoPoster: "/images/products/barro-2.webp",
+    introVideoTitle: "Proximamente: video introductorio del taller",
+    introVideoDescription:
+      "Este espacio quedara disponible para una presentacion breve de Yanina sobre materiales, modalidad y primeras practicas.",
     includes: ["Guia PDF paso a paso", "Lista de proveedores en Argentina", "Acompanamiento por grupo privado"],
     materialsNeeded: ["Arcilla de baja o alta temperatura", "Estecas basicas", "Esponja", "Palo de amasar", "Bolsa plastica para conservar humedad"],
     featured: true,

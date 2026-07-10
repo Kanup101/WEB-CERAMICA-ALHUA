@@ -10,6 +10,11 @@ export type Workshop = {
   modality: string;
   level: string;
   image: string;
+  videoUrl?: string;
+  videoType?: "local" | "youtube" | "vimeo";
+  videoPoster?: string;
+  introVideoTitle?: string;
+  introVideoDescription?: string;
   includes: string[];
   materialsNeeded: string[];
   featured: boolean;

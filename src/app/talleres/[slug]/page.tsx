@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CheckCircle2 } from "lucide-react";
+import { VideoBlock } from "@/components/media/VideoBlock";
 import { WhatsAppButton } from "@/components/shared/WhatsAppButton";
 import { getWorkshopBySlug, workshops } from "@/data/workshops";
 import { workshopWhatsAppMessage } from "@/lib/contact";
@@ -21,8 +22,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!workshop) return {};
 
   return {
-    title: `${workshop.title} | Taller online de ceramica`,
-    description: `${workshop.subtitle} Taller online de ceramica creativa para aprender desde casa.`,
+    title: `${workshop.title} | Yanina Cardozo`,
+    description: `${workshop.subtitle} Taller online de ceramica creativa con Yanina Cardozo para aprender desde casa.`,
   };
 }
 
@@ -61,6 +62,16 @@ export default async function WorkshopDetailPage({ params }: PageProps) {
         <List title="Que aprenderas" items={workshop.includes} />
         <List title="Para quien es" items={["Personas curiosas", "Ceramistas en formacion", "Quienes buscan una practica creativa pausada"]} />
         <List title="Materiales necesarios" items={workshop.materialsNeeded} />
+      </div>
+
+      <div className="mt-16">
+        <VideoBlock
+          title={workshop.introVideoTitle || "Proximamente: video introductorio del taller"}
+          description={workshop.introVideoDescription || "Este espacio queda preparado para sumar una presentacion en video del taller."}
+          videoUrl={workshop.videoUrl}
+          videoType={workshop.videoType}
+          poster={workshop.videoPoster || workshop.image}
+        />
       </div>
     </div>
   );

@@ -4,9 +4,9 @@ import { SectionTitle } from "@/components/shared/SectionTitle";
 import { products } from "@/data/products";
 
 export const metadata: Metadata = {
-  title: "Tienda de ceramica artesanal argentina",
+  title: "Piezas de ceramica artesanal | Yanina Cardozo",
   description:
-    "Explora piezas unicas de ceramica artesanal argentina: tazas, cuencos, platos y objetos decorativos hechos a mano.",
+    "Explora piezas unicas de ceramica artesanal argentina creadas por Yanina Cardozo: tazas, cuencos, platos y objetos decorativos hechos a mano.",
 };
 
 export default function StorePage() {

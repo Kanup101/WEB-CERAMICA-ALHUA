@@ -24,8 +24,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!product) return {};
 
   return {
-    title: `${product.name} | Pieza de ceramica artesanal`,
-    description: `${product.description} Pieza unica o de serie pequena de ceramica artesanal argentina.`,
+    title: `${product.name} | Yanina Cardozo`,
+    description: `${product.description} Pieza unica o de serie pequena de ceramica artesanal argentina creada por Yanina Cardozo.`,
   };
 }
 

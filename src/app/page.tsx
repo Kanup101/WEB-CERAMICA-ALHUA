@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ArrowRight, Flame, Hand, Heart, Leaf, Sparkles } from "lucide-react";
 import { ProductGrid } from "@/components/commerce/ProductGrid";
+import { VideoBlock } from "@/components/media/VideoBlock";
 import { NewsletterForm } from "@/components/shared/NewsletterForm";
 import { SectionTitle } from "@/components/shared/SectionTitle";
 import { WhatsAppButton } from "@/components/shared/WhatsAppButton";
@@ -15,21 +16,24 @@ export default function Home() {
 
   return (
     <div>
-      <section className="relative overflow-hidden bg-[#F4E8D9]">
+      <section className="relative overflow-hidden bg-[#E9B8A0]">
         <div className="absolute inset-0 opacity-35">
           <Image src="/images/products/paisaje-2.webp" alt="" fill priority className="object-cover" sizes="100vw" />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#F4E8D9] via-[#F4E8D9]/65 to-[#F4E8D9]/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#E9B8A0] via-[#F3D5C4]/70 to-[#F4E8D9]/20" />
         <div className="relative mx-auto flex min-h-[620px] max-w-7xl items-end px-4 py-16 sm:min-h-[680px] sm:px-6 sm:py-20 lg:px-8">
           <div className="max-w-3xl rounded-[2rem] bg-[#FFF9EF]/70 p-5 backdrop-blur-sm sm:bg-transparent sm:p-0 sm:backdrop-blur-0">
             <p className="mb-5 inline-flex rounded-full bg-[#FFF9EF]/85 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#6F4A39]">
               Ceramica artesanal hecha en Argentina
             </p>
-            <h1 className="font-serif text-4xl font-semibold leading-[1.04] tracking-tight text-[#2F251F] sm:text-6xl lg:text-7xl">
-              Piezas de ceramica para una casa mas lenta y sensible.
+            <h1 className="font-brand text-5xl font-semibold leading-[1.02] tracking-tight text-[#2F251F] sm:text-7xl lg:text-8xl">
+              Yanina Cardozo
             </h1>
+            <p className="mt-4 font-brand text-3xl text-[#6F4A39] sm:text-4xl">
+              Ceramica creativa para habitar lo cotidiano
+            </p>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-[#4B4038]">
-              Alhua crea objetos utilitarios, piezas unicas y talleres online para quienes buscan belleza cotidiana, oficio real y cercania humana.
+              Piezas hechas a mano, objetos unicos y talleres online para acercarte al proceso ceramico desde una mirada sensible y artesanal.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <ButtonLink href="/tienda" size="lg">
@@ -75,9 +79,9 @@ export default function Home() {
           <SectionTitle
             eyebrow="Historia"
             title="Una marca nacida del contacto con la tierra"
-            description="Alhua trabaja con formas simples, paletas terrosas y procesos lentos. Cada pieza conserva una huella: el gesto de las manos, el fuego y la sorpresa del esmalte."
+            description="Yanina trabaja con formas simples, paletas terrosas y procesos lentos. Cada pieza conserva una huella: el gesto de las manos, el fuego y la sorpresa del esmalte."
           />
-          <ButtonLink href="/sobre-alhua" variant="outline" className="mt-8">
+          <ButtonLink href="/sobre-yanina" variant="outline" className="mt-8">
             Conocer la historia
           </ButtonLink>
         </div>
@@ -93,6 +97,22 @@ export default function Home() {
               <p className="mt-2 text-sm leading-6 text-[#6C5C50]">{item.text}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-5xl px-4 py-20 sm:px-6 lg:px-8">
+        <SectionTitle
+          align="center"
+          eyebrow="Proceso en movimiento"
+          title="Videos y cursos en preparacion"
+          description="La web queda lista para sumar videos breves de proceso, presentaciones de talleres y material introductorio de cursos online."
+        />
+        <div className="mt-10">
+          <VideoBlock
+            title="Proximamente: proceso ceramico en video"
+            description="Un espacio preparado para mostrar modelado, textura, esmaltes y momentos del taller sin cargar videos pesados por ahora."
+            poster="/images/products/barro-2.webp"
+          />
         </div>
       </section>
 
@@ -127,7 +147,7 @@ export default function Home() {
             Novedades, aperturas de talleres y nuevas piezas
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-[#E7D2BA]">
-            Sumate a la comunidad Alhua para recibir lanzamientos en tandas pequenas, aperturas de cupos y contenidos sobre ceramica creativa.
+            Sumate para recibir lanzamientos en tandas pequenas, aperturas de cupos y contenidos sobre ceramica creativa.
           </p>
           <div className="mx-auto mt-8 max-w-xl">
             <NewsletterForm />

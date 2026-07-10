@@ -6,11 +6,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Alhua Ceramica Creativa | Ceramica artesanal argentina",
-    template: "%s | Alhua Ceramica Creativa",
+    default: "Yanina Cardozo | Ceramica creativa",
+    template: "%s | Yanina Cardozo",
   },
   description:
-    "Piezas unicas de ceramica artesanal argentina, objetos hechos a mano y talleres online de ceramica creativa.",
+    "Yanina Cardozo, artista ceramista. Piezas unicas de ceramica artesanal argentina y talleres online de ceramica creativa.",
   keywords: [
     "ceramica artesanal",
     "ceramica creativa",
@@ -20,8 +20,8 @@ export const metadata: Metadata = {
     "ceramica artesanal argentina",
   ],
   openGraph: {
-    title: "Alhua Ceramica Creativa",
-    description: "Ceramica artesanal premium, piezas unicas y talleres online.",
+    title: "Yanina Cardozo | Ceramica creativa",
+    description: "Piezas de ceramica artesanal, objetos unicos y talleres online.",
     locale: "es_AR",
     type: "website",
   },

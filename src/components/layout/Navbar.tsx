@@ -9,7 +9,7 @@ import { ButtonLink } from "@/components/ui/button";
 const navItems = [
   { href: "/tienda", label: "Tienda" },
   { href: "/talleres", label: "Talleres" },
-  { href: "/sobre-alhua", label: "Sobre Alhua" },
+  { href: "/sobre-yanina", label: "Sobre Yanina" },
   { href: "/contacto", label: "Contacto" },
 ];
 
@@ -19,8 +19,8 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-[#E6D7C2] bg-[#FFF9EF]/90 backdrop-blur">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8" aria-label="Principal">
-        <Link href="/" className="font-serif text-2xl font-semibold tracking-tight text-[#342A24]">
-          Alhua
+        <Link href="/" className="font-brand text-3xl font-semibold tracking-tight text-[#342A24]">
+          Yanina Cardozo
           <span className="block text-xs font-normal uppercase tracking-[0.2em] text-[#8B6E54]">Ceramica Creativa</span>
         </Link>
         <div className="hidden items-center gap-8 md:flex">

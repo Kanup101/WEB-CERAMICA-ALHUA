@@ -7,9 +7,9 @@ export function Footer() {
     <footer className="border-t border-[#E1D1BB] bg-[#3B3029] text-[#FFF9EF]">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-4 lg:px-8">
         <div className="md:col-span-2">
-          <p className="font-serif text-3xl font-semibold">Alhua</p>
+          <p className="font-brand text-4xl font-semibold">Yanina Cardozo</p>
           <p className="mt-4 max-w-md text-sm leading-6 text-[#E7D2BA]">
-            Ceramica artesanal creada en Argentina: piezas utilitarias, objetos unicos y talleres online para habitar el oficio con calma.
+            Artista ceramista en Argentina: piezas utilitarias, objetos unicos y talleres online para acercarte al proceso ceramico.
           </p>
         </div>
         <div>
@@ -17,7 +17,7 @@ export function Footer() {
           <div className="mt-4 flex flex-col gap-3 text-sm text-[#F4E8D9]">
             <Link href="/tienda">Tienda</Link>
             <Link href="/talleres">Talleres</Link>
-            <Link href="/sobre-alhua">Sobre Alhua</Link>
+            <Link href="/sobre-yanina">Sobre Yanina</Link>
             <Link href="/contacto">Contacto</Link>
           </div>
         </div>
@@ -26,13 +26,17 @@ export function Footer() {
           <div className="mt-4 space-y-3 text-sm text-[#F4E8D9]">
             <p className="flex items-center gap-2"><MapPin className="h-4 w-4" /> {contactInfo.location}</p>
             <a className="flex items-center gap-2" href={`mailto:${contactInfo.email}`}><Mail className="h-4 w-4" /> {contactInfo.email}</a>
-            <a className="flex items-center gap-2" href={contactInfo.instagramUrl} target="_blank" rel="noreferrer"><Camera className="h-4 w-4" /> {contactInfo.instagramHandle}</a>
-            <a href={whatsappHref()} target="_blank" rel="noreferrer">WhatsApp</a>
+            {contactInfo.instagramUrl ? (
+              <a className="flex items-center gap-2" href={contactInfo.instagramUrl} target="_blank" rel="noreferrer"><Camera className="h-4 w-4" /> {contactInfo.instagramHandle}</a>
+            ) : (
+              <p className="flex items-center gap-2"><Camera className="h-4 w-4" /> {contactInfo.instagramHandle}</p>
+            )}
+            <a href={whatsappHref()} target="_blank" rel="noreferrer">WhatsApp {contactInfo.phoneDisplay}</a>
           </div>
         </div>
       </div>
       <div className="border-t border-white/10 px-4 py-5 text-center text-xs text-[#D8B79C]">
-        Alhua Ceramica Creativa. Preparada para ecommerce, pagos e internacionalizacion.
+        Yanina Cardozo Ceramica Creativa. Sitio preparado para ecommerce, talleres y futuras integraciones.
       </div>
     </footer>
   );

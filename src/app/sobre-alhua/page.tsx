@@ -4,9 +4,9 @@ import { Flame, Hand, Leaf } from "lucide-react";
 import { SectionTitle } from "@/components/shared/SectionTitle";
 
 export const metadata: Metadata = {
-  title: "Sobre Alhua | Ceramica artesanal argentina",
+  title: "Sobre Yanina | Ceramica artesanal argentina",
   description:
-    "Historia, filosofia y proceso creativo de Alhua Ceramica Creativa, marca de ceramica artesanal hecha a mano en Argentina.",
+    "Historia, filosofia y proceso creativo de Yanina Cardozo, artista ceramista dedicada a piezas hechas a mano y talleres online.",
 };
 
 export default function AboutPage() {
@@ -15,9 +15,9 @@ export default function AboutPage() {
       <section className="mx-auto grid max-w-7xl gap-12 px-4 py-12 sm:px-6 sm:py-14 lg:grid-cols-2 lg:px-8">
         <div className="self-center">
           <SectionTitle
-            eyebrow="Sobre Alhua"
+            eyebrow="Sobre Yanina"
             title="Ceramica creativa con raiz artesanal"
-            description="Alhua nace del deseo de crear objetos cercanos: piezas que se usan, se miran y acompanan momentos cotidianos sin perder su caracter unico."
+            description="La obra de Yanina nace del deseo de crear objetos cercanos: piezas que se usan, se miran y acompanan momentos cotidianos sin perder su caracter unico."
           />
           <div className="mt-6 space-y-5 leading-8 text-[#6C5C50]">
             <p>
@@ -29,7 +29,7 @@ export default function AboutPage() {
           </div>
         </div>
         <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-[#EFE4D4]">
-          <Image src="/images/products/barro-1.webp" alt="Detalle de arcilla y proceso artesanal de Alhua" fill className="object-cover" sizes="(min-width: 1024px) 50vw, 100vw" />
+          <Image src="/images/products/barro-1.webp" alt="Detalle de arcilla y proceso artesanal de Yanina Cardozo" fill className="object-cover" sizes="(min-width: 1024px) 50vw, 100vw" />
         </div>
       </section>
 

@@ -102,7 +102,16 @@ export function CartDrawer() {
                 </div>
               ) : (
                 <div className="rounded-3xl border border-dashed border-[#D8C3AA] p-8 text-center text-[#6C5C50]">
-                  Tu carrito esta vacio por ahora.
+                  <ShoppingBag className="mx-auto h-8 w-8 text-[#9A6B50]" aria-hidden="true" />
+                  <p className="mt-4 font-medium text-[#342A24]">Tu carrito esta vacio.</p>
+                  <p className="mt-2 text-sm leading-6">Explora la tienda y guarda tus piezas favoritas para consultar disponibilidad.</p>
+                  <Link
+                    href="/tienda"
+                    onClick={() => setOpen(false)}
+                    className="mt-5 inline-flex h-11 items-center justify-center rounded-full border border-[#D8C3AA] px-5 text-sm font-medium text-[#4B4038] hover:bg-[#F0E5D6]"
+                  >
+                    Ver piezas
+                  </Link>
                 </div>
               )}
             </div>

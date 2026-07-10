@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CheckCircle2 } from "lucide-react";
 import { WhatsAppButton } from "@/components/shared/WhatsAppButton";
-import { Button } from "@/components/ui/button";
 import { getWorkshopBySlug, workshops } from "@/data/workshops";
+import { workshopWhatsAppMessage } from "@/lib/contact";
 import { formatARS } from "@/lib/utils";
 
 type PageProps = {
@@ -21,8 +21,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!workshop) return {};
 
   return {
-    title: workshop.title,
-    description: `${workshop.subtitle} Taller online de ceramica creativa.`,
+    title: `${workshop.title} | Taller online de ceramica`,
+    description: `${workshop.subtitle} Taller online de ceramica creativa para aprender desde casa.`,
   };
 }
 
@@ -35,14 +35,14 @@ export default async function WorkshopDetailPage({ params }: PageProps) {
   }
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
       <div className="grid gap-12 lg:grid-cols-[0.95fr_1.05fr]">
         <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-[#EFE4D4]">
           <Image src={workshop.image} alt={workshop.title} fill priority className="object-cover" sizes="(min-width: 1024px) 45vw, 100vw" />
         </div>
         <div className="lg:pt-8">
           <p className="text-sm uppercase tracking-[0.16em] text-[#8B6E54]">{workshop.level}</p>
-          <h1 className="mt-3 font-serif text-5xl font-semibold tracking-tight text-[#342A24]">{workshop.title}</h1>
+          <h1 className="mt-3 font-serif text-4xl font-semibold tracking-tight text-[#342A24] sm:text-5xl">{workshop.title}</h1>
           <p className="mt-5 text-xl leading-8 text-[#4B4038]">{workshop.subtitle}</p>
           <p className="mt-5 leading-7 text-[#6C5C50]">{workshop.description}</p>
           <div className="mt-8 grid gap-3 rounded-3xl border border-[#E1D1BB] bg-[#FFF9EF] p-6 text-[#4B4038] sm:grid-cols-2">
@@ -52,10 +52,7 @@ export default async function WorkshopDetailPage({ params }: PageProps) {
             <p><strong>Precio:</strong> {formatARS(workshop.priceARS)}</p>
           </div>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <Button size="lg" onClick={undefined}>
-              Reservar lugar
-            </Button>
-            <WhatsAppButton message={`Hola Alhua, quiero consultar por el taller ${workshop.title}.`} />
+            <WhatsAppButton message={workshopWhatsAppMessage(workshop)} label="Reservar por WhatsApp" />
           </div>
         </div>
       </div>

@@ -21,9 +21,9 @@ export function WorkshopCard({ workshop }: { workshop: Workshop }) {
           <p className="flex items-center gap-2"><Monitor className="h-4 w-4" /> {workshop.modality}</p>
           <p className="flex items-center gap-2"><Sparkles className="h-4 w-4" /> {workshop.availableSpots} lugares disponibles</p>
         </div>
-        <div className="flex items-center justify-between gap-3">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-lg font-semibold text-[#6F4A39]">{formatARS(workshop.priceARS)}</p>
-          <ButtonLink href={`/talleres/${workshop.slug}`} variant="outline">
+          <ButtonLink href={`/talleres/${workshop.slug}`} variant="outline" className="w-full sm:w-auto">
             Ver taller
           </ButtonLink>
         </div>

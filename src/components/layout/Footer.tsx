@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Camera, Mail, MapPin } from "lucide-react";
-import { whatsappHref } from "@/components/shared/WhatsAppButton";
+import { contactInfo, whatsappHref } from "@/lib/contact";
 
 export function Footer() {
   return (
@@ -24,9 +24,9 @@ export function Footer() {
         <div>
           <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-[#D8B79C]">Contacto</h3>
           <div className="mt-4 space-y-3 text-sm text-[#F4E8D9]">
-            <p className="flex items-center gap-2"><MapPin className="h-4 w-4" /> Argentina</p>
-            <a className="flex items-center gap-2" href="mailto:hola@alhua.com"><Mail className="h-4 w-4" /> hola@alhua.com</a>
-            <a className="flex items-center gap-2" href="https://instagram.com" target="_blank" rel="noreferrer"><Camera className="h-4 w-4" /> Instagram</a>
+            <p className="flex items-center gap-2"><MapPin className="h-4 w-4" /> {contactInfo.location}</p>
+            <a className="flex items-center gap-2" href={`mailto:${contactInfo.email}`}><Mail className="h-4 w-4" /> {contactInfo.email}</a>
+            <a className="flex items-center gap-2" href={contactInfo.instagramUrl} target="_blank" rel="noreferrer"><Camera className="h-4 w-4" /> {contactInfo.instagramHandle}</a>
             <a href={whatsappHref()} target="_blank" rel="noreferrer">WhatsApp</a>
           </div>
         </div>

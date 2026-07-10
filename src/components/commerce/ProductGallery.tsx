@@ -10,7 +10,7 @@ export function ProductGallery({ images, name }: { images: string[]; name: strin
   return (
     <div className="space-y-4">
       <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-[#EFE4D4]">
-        <Image src={active} alt={name} fill priority className="object-cover" sizes="(min-width: 1024px) 50vw, 100vw" />
+        <Image src={active} alt={name} fill priority className="object-contain p-2" sizes="(min-width: 1024px) 50vw, 100vw" />
       </div>
       <div className="grid grid-cols-4 gap-3">
         {images.map((image, index) => (

@@ -5,19 +5,19 @@ import { CartProvider } from "@/contexts/CartContext";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://alhua.example.com"),
   title: {
-    default: "Alhua Ceramica Creativa | Ceramica artesanal en Argentina",
+    default: "Alhua Ceramica Creativa | Ceramica artesanal argentina",
     template: "%s | Alhua Ceramica Creativa",
   },
   description:
-    "Piezas unicas de ceramica artesanal, objetos hechos a mano y talleres online de ceramica creativa desde Argentina.",
+    "Piezas unicas de ceramica artesanal argentina, objetos hechos a mano y talleres online de ceramica creativa.",
   keywords: [
     "ceramica artesanal",
     "ceramica creativa",
     "piezas unicas de ceramica",
     "talleres online de ceramica",
     "ceramica hecha a mano en Argentina",
+    "ceramica artesanal argentina",
   ],
   openGraph: {
     title: "Alhua Ceramica Creativa",

@@ -49,12 +49,12 @@ export function Storefront({ products }: { products: Product[] }) {
             </button>
           ))}
         </div>
-        <label className="flex items-center gap-3 text-sm font-medium text-[#4B4038]">
+        <label className="flex flex-col gap-2 text-sm font-medium text-[#4B4038] sm:flex-row sm:items-center sm:gap-3">
           Ordenar
           <select
             value={sort}
             onChange={(event) => setSort(event.target.value as SortKey)}
-            className="h-11 rounded-full border border-[#D8C3AA] bg-white px-4 text-sm outline-none focus:border-[#8F5F45]"
+            className="h-11 w-full rounded-full border border-[#D8C3AA] bg-white px-4 text-sm outline-none focus:border-[#8F5F45] sm:w-auto"
           >
             {sortOptions.map((option) => (
               <option key={option.value} value={option.value}>

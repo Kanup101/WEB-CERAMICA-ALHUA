@@ -4,7 +4,7 @@ import { WorkshopCard } from "@/components/workshops/WorkshopCard";
 import { workshops } from "@/data/workshops";
 
 export const metadata: Metadata = {
-  title: "Talleres online de ceramica",
+  title: "Talleres online de ceramica artesanal",
   description:
     "Talleres online de ceramica creativa para aprender tecnicas manuales, esmaltes y piezas utilitarias desde Argentina.",
 };
@@ -15,7 +15,7 @@ export default function WorkshopsPage() {
       <SectionTitle
         eyebrow="Talleres online"
         title="Aprender ceramica con calma y oficio"
-        description="Encuentros pensados para acompanar el proceso creativo, desde primeras piezas hasta colecciones con identidad."
+        description="Encuentros online pensados para acompanar el proceso creativo, desde primeras piezas hasta colecciones con identidad."
       />
       <div className="mt-10 grid gap-6 lg:grid-cols-3">
         {workshops.map((workshop) => (

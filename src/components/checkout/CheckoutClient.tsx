@@ -6,22 +6,19 @@ import { SectionTitle } from "@/components/shared/SectionTitle";
 import { WhatsAppButton } from "@/components/shared/WhatsAppButton";
 import { ButtonLink } from "@/components/ui/button";
 import { useCart } from "@/contexts/CartContext";
+import { checkoutWhatsAppMessage } from "@/lib/contact";
 import { formatARS } from "@/lib/utils";
 
 export function CheckoutClient() {
   const { items, totalARS } = useCart();
-  const whatsappMessage = items.length
-    ? `Hola Alhua, quiero finalizar mi compra: ${items
-        .map((item) => `${item.quantity} x ${item.product.name}`)
-        .join(", ")}. Total: ${formatARS(totalARS)}.`
-    : "Hola Alhua, quiero consultar por una compra.";
+  const whatsappMessage = checkoutWhatsAppMessage(items, totalARS);
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
       <SectionTitle
         eyebrow="Checkout"
         title="Resumen de compra"
-        description="El checkout online estara disponible proximamente. Por ahora podes finalizar tu compra por WhatsApp."
+        description="El checkout online estara disponible proximamente. Por ahora podes finalizar tu compra por WhatsApp con el resumen ya preparado."
       />
 
       <div className="mt-10 grid gap-8 lg:grid-cols-[1fr_0.75fr]">
@@ -62,10 +59,10 @@ export function CheckoutClient() {
           <p className="text-sm uppercase tracking-[0.16em] text-[#D8B79C]">Total general</p>
           <p className="mt-3 text-4xl font-semibold">{formatARS(totalARS)}</p>
           <p className="mt-5 text-sm leading-6 text-[#E7D2BA]">
-            El checkout online estara disponible proximamente. Por ahora podes finalizar tu compra por WhatsApp.
+            El checkout online estara disponible proximamente. Por ahora podes finalizar tu compra por WhatsApp y coordinamos disponibilidad, envio o retiro de forma manual.
           </p>
           <div className="mt-6 flex flex-col gap-3">
-            <WhatsAppButton message={whatsappMessage} />
+            <WhatsAppButton message={whatsappMessage} label="Finalizar por WhatsApp" />
             <ButtonLink href="/tienda" variant="outline" className="border-[#D8B79C] text-[#FFF9EF] hover:bg-white/10">
               Seguir viendo piezas
             </ButtonLink>

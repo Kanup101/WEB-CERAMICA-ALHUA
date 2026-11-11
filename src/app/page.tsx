@@ -9,6 +9,8 @@ import { ButtonLink } from "@/components/ui/button";
 import { WorkshopCard } from "@/components/workshops/WorkshopCard";
 import { products } from "@/data/products";
 import { workshops } from "@/data/workshops";
+import { experiences } from "@/data/experiences";
+import { ExperienceCard } from "@/components/experiences/ExperiencePages";
 
 export default function Home() {
   const featuredProducts = products.filter((product) => product.featured).slice(0, 3);
@@ -72,6 +74,14 @@ export default function Home() {
             ))}
           </div>
         </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <SectionTitle eyebrow="Encuentros en Salta" title="Experiencias para compartir" description="Cerámica, mates y conversaciones: una invitación a crear con las manos junto a Yanina." />
+        <div className="mt-10 space-y-6">
+          {experiences.filter((experience) => experience.featured).map((experience) => <ExperienceCard key={experience.id} experience={experience} />)}
+        </div>
+        <ButtonLink href="/experiencias" variant="outline" className="mt-6">Explorar experiencias</ButtonLink>
       </section>
 
       <section className="mx-auto grid max-w-7xl gap-10 px-4 py-20 sm:px-6 lg:grid-cols-2 lg:px-8">

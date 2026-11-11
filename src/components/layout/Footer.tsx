@@ -17,6 +17,7 @@ export function Footer() {
           <div className="mt-4 flex flex-col gap-3 text-sm text-[#F4E8D9]">
             <Link href="/tienda">Tienda</Link>
             <Link href="/talleres">Talleres</Link>
+            <Link href="/experiencias">Experiencias</Link>
             <Link href="/sobre-yanina">Sobre Yanina</Link>
             <Link href="/contacto">Contacto</Link>
           </div>

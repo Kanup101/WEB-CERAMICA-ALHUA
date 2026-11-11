@@ -1,6 +1,4 @@
-import type { Locale } from "@/lib/i18n/config";
-
-export type LocalizedText = Record<Locale, string>;
+export type LocalizedText = string;
 
 export type Experience = {
   id: string;

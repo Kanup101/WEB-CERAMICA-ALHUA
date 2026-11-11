@@ -89,6 +89,12 @@ Las WEBP finales quedan en `public/images/products/` y son las que debe usar la 
 
 No se incluyen claves reales ni variables sensibles. Los archivos `.env*`, builds y dependencias locales quedan excluidos por `.gitignore`.
 
+## Idiomas
+
+La web pública está disponible en español (sin prefijo), inglés (`/en`), alemán (`/de`), francés (`/fr`), coreano (`/ko`) y chino simplificado (`/zh-CN`). El selector conserva la página y la preferencia; el carrito mantiene su contenido.
+
+Las traducciones se editan en `messages/`. Ver [arquitectura, contenido y pruebas](docs/internacionalizacion.md). `npm.cmd run test:i18n` audita la cobertura y también se ejecuta antes de cada build. Configurar `NEXT_PUBLIC_SITE_URL` con el origen definitivo antes del build de producción para activar el sitemap absoluto.
+
 ## Proximas etapas
 
 - Reemplazar placeholders por fotografia real optimizada.
@@ -96,5 +102,4 @@ No se incluyen claves reales ni variables sensibles. Los archivos `.env*`, build
 - Integrar checkout real con Mercado Pago para Argentina.
 - Preparar Stripe para ventas internacionales.
 - Agregar autenticacion/admin para cargar stock y precios.
-- Implementar i18n completo `es/en`.
 - Sumar emails transaccionales y formularios con backend.

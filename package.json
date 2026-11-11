@@ -4,9 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/audit-i18n.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "test:i18n": "node scripts/audit-i18n.mjs",
+    "test:i18n:http": "node scripts/audit-i18n.mjs --http",
+    "test:i18n:browser": "node scripts/test-i18n-browser.mjs",
     "images:convert": "node convert-images.js"
   },
   "dependencies": {

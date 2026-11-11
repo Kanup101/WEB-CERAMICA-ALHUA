@@ -1,5 +1,7 @@
 # Experiencias turísticas — etapa 5A
 
+> Actualización de etapa 5B: las páginas ahora usan la arquitectura global de seis idiomas. Consultar [internacionalización](internacionalizacion.md) para las rutas, diccionarios y getters vigentes. Las notas ES/EN de este documento describen la implementación inicial.
+
 ## Objetivo y primera experiencia
 Incorporar encuentros culturales presenciales sin modificar tienda, carrito, checkout ni talleres online.
 **Barro, mates y encuentros**, con Yanina Cardozo, en Salta, Argentina: **USD 35 por persona**. Sin conversión a pesos, pagos online ni reserva confirmada desde el sitio.

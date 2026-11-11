@@ -15,7 +15,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, "Malgun Gothic", "Apple SD Gothic Neo", "Microsoft YaHei", "PingFang SC", "Noto Sans CJK KR", "Noto Sans CJK SC", sans-serif;
 }
 
 ::selection {
@@ -28,10 +28,12 @@ html {
 }
 
 .font-serif {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: Georgia, "Times New Roman", "Malgun Gothic", "Microsoft YaHei", "Noto Serif CJK KR", "Noto Serif CJK SC", serif;
 }
 
 .font-brand {
-  font-family: "Cormorant Garamond", "Playfair Display", Georgia, "Times New Roman", serif;
+  font-family: "Cormorant Garamond", "Playfair Display", Georgia, "Times New Roman", "Malgun Gothic", "Microsoft YaHei", "Noto Serif CJK KR", "Noto Serif CJK SC", serif;
   letter-spacing: 0.01em;
 }
+
+button, a, select { overflow-wrap: anywhere; }

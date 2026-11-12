@@ -3,6 +3,12 @@ import { defaultLocale, isLocale, localeCookie, localizedPath } from "@/lib/i18n
 
 export function proxy(request: NextRequest) {
   const segment = request.nextUrl.pathname.split("/")[1];
+  if (segment === "admin") {
+    const response = NextResponse.next();
+    response.headers.set("X-Robots-Tag", "noindex, nofollow, noarchive");
+    response.headers.set("Cache-Control", "private, no-store");
+    return response;
+  }
   const preference = request.cookies.get(localeCookie)?.value;
   if (isLocale(segment)) {
     if (segment === defaultLocale) {

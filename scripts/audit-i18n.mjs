@@ -45,6 +45,8 @@ const files = dir => fs.readdirSync(dir, { withFileTypes: true }).flatMap(entry 
 const textExemptions = new Set(["Yanina Cardozo", "WhatsApp", "x", "USD", "←", "+"]);
 const violations = [];
 for (const file of [...files("src/components"), ...files("src/views"), ...files("src/app")].filter(file => file.endsWith(".tsx"))) {
+  // The private administration is explicitly Spanish-only; public coverage stays mandatory.
+  if (file.split(path.sep).includes("admin")) continue;
   const source = fs.readFileSync(file, "utf8");
   const ast = ts.createSourceFile(file, source, ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX);
   function visit(node) {

@@ -15,6 +15,7 @@
 
 # next.js
 /.next/
+/.next-admin-test*/
 /out/
 
 # production
@@ -33,6 +34,22 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
+/.data/
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.sqlite.backup-*
+*.db.backup-*
+*.sqlite.backup-*
+*.db.backup-*
+!.env.example
+/.data/
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
 
 # vercel
 .vercel

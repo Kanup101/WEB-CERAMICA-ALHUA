@@ -2,25 +2,35 @@
   "name": "alhua-ceramica-creativa",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=24.16.0"
+  },
   "scripts": {
     "dev": "next dev",
     "prebuild": "node scripts/audit-i18n.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "admin:migrate": "node scripts/admin-migrate.mjs",
+    "admin:create": "node scripts/admin-create.mjs",
+    "test:admin": "node scripts/test-admin.mjs",
+    "test:export": "node scripts/test-admin-export.mjs",
     "test:i18n": "node scripts/audit-i18n.mjs",
     "test:i18n:http": "node scripts/audit-i18n.mjs --http",
     "test:i18n:browser": "node scripts/test-i18n-browser.mjs",
     "images:convert": "node convert-images.js"
   },
   "dependencies": {
+    "better-auth": "1.7.21",
     "clsx": "^2.1.1",
     "lucide-react": "^1.24.0",
     "next": "^16.4.6",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "sharp": "^0.35.3",
-    "tailwind-merge": "^3.6.0"
+    "tailwind-merge": "^3.6.0",
+    "write-excel-file": "4.1.1",
+    "zod": "4.6.7"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -29,6 +39,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "^16.4.6",
+    "fflate": "0.8.3",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

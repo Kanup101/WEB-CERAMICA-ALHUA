@@ -95,6 +95,12 @@ La web pública está disponible en español (sin prefijo), inglés (`/en`), ale
 
 Las traducciones se editan en `messages/`. Ver [arquitectura, contenido y pruebas](docs/internacionalizacion.md). `npm.cmd run test:i18n` audita la cobertura y también se ejecuta antes de cada build. Configurar `NEXT_PUBLIC_SITE_URL` con el origen definitivo antes del build de producción para activar el sitemap absoluto.
 
+## Panel privado de difusión turística
+
+Requiere Node.js 24.16+. Para la primera instalación local, ejecutar `npm.cmd run admin:create` en una terminal de confianza: genera la configuración privada si no existe, aplica las migraciones SQLite y solicita credenciales sin mostrar la contraseña. Después iniciar con `npm.cmd run dev` y abrir `/admin/login`.
+
+Ver [instalación, seguridad, migraciones, CSV y despliegue](docs/panel-difusion-turistica.md). Las pruebas aisladas se ejecutan con `npm.cmd run test:admin`. El panel no envía correos ni incluye contactos precargados.
+
 ## Proximas etapas
 
 - Reemplazar placeholders por fotografia real optimizada.

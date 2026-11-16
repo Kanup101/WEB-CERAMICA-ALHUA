@@ -1,4 +1,6 @@
 import { notFound } from "next/navigation";
+import { CollectionsIndex, CollectionDetail } from "@/components/collections/CollectionPages";
+import { getCollectionBySlug } from "@/data/collections";
 import Home from "@/views/Home";
 import Store from "@/views/Store";
 import ProductDetail from "@/views/ProductDetail";
@@ -26,6 +28,12 @@ export default async function Page({ params }: Props) {
   if (!publicPaths.includes(pathname)) notFound();
   let content: React.ReactNode;
   if (pathname === "/") content = <Home />;
+  else if (pathname === "/colecciones") content = <CollectionsIndex />;
+  else if (path[0] === "colecciones") {
+    const collection = getCollectionBySlug(path[1]);
+    if (!collection) notFound();
+    content = <CollectionDetail collection={collection} />;
+  }
   else if (pathname === "/tienda") content = <Store />;
   else if (pathname === "/talleres") content = <Workshops />;
   else if (pathname === "/experiencias") content = <ExperiencesIndex />;

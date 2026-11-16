@@ -1,0 +1,14 @@
+{
+  "pichuda": { "mergeInto": "pinchuda" },
+  "pinchuda": { "name": "Pinchuda", "order": 5, "imageOrder": ["pinchuda1.png", "pichuda2.png"] },
+  "aros-collares": { "published": false },
+  "obra": { "order": 1, "cover": "Obra 2.png" },
+  "antaras": { "order": 2 },
+  "figura": { "order": 3, "cover": "figura3.png" },
+  "copas": { "order": 4 },
+  "bocadeloca": { "name": "Boca de loca" },
+  "mascara": { "name": "Máscara" },
+  "ojodeloca": { "name": "Ojo de loca", "order": 0 },
+  "vasijasilvadora-peluca": { "name": "Vasija silvadora peluca", "order": 6 },
+  "vasijasilvadora-picolargo": { "name": "Vasija silvadora picolargo" }
+}

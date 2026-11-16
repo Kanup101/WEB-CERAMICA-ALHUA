@@ -1,0 +1,1281 @@
+[
+  {
+    "id": "antaras-01",
+    "title": "Antaras · 01",
+    "titleIsEditorial": true,
+    "collectionSlug": "antaras",
+    "visualComposition": "artwork.photo.antaras-1",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "antaras1.png",
+        "alt": "artwork.photo.antaras-1",
+        "visualDescription": "artwork.photo.antaras-1"
+      }
+    ]
+  },
+  {
+    "id": "antaras-02",
+    "title": "Antaras · 02",
+    "titleIsEditorial": true,
+    "collectionSlug": "antaras",
+    "visualComposition": "artwork.photo.antaras-2",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "antaras2.png",
+        "alt": "artwork.photo.antaras-2",
+        "visualDescription": "artwork.photo.antaras-2"
+      }
+    ]
+  },
+  {
+    "id": "boca-01",
+    "title": "Boca de loca",
+    "titleIsEditorial": true,
+    "collectionSlug": "bocadeloca",
+    "visualComposition": "artwork.photo.boca-1",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "bocadeloca.png",
+        "alt": "artwork.photo.boca-1",
+        "visualDescription": "artwork.photo.boca-1"
+      }
+    ]
+  },
+  {
+    "id": "copas-01",
+    "title": "Copas",
+    "titleIsEditorial": true,
+    "collectionSlug": "copas",
+    "visualComposition": "artwork.photo.copas-1",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "Copas1.png",
+        "alt": "artwork.photo.copas-1",
+        "visualDescription": "artwork.photo.copas-1"
+      },
+      {
+        "originalName": "Copas2.png",
+        "alt": "artwork.photo.copas-2",
+        "visualDescription": "artwork.photo.copas-2"
+      }
+    ]
+  },
+  {
+    "id": "derbake-01",
+    "title": "Derbake",
+    "titleIsEditorial": true,
+    "collectionSlug": "derbake",
+    "visualComposition": "artwork.photo.derbake-1",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "derbake2.png",
+        "alt": "artwork.photo.derbake-1",
+        "visualDescription": "artwork.photo.derbake-1"
+      }
+    ]
+  },
+  {
+    "id": "figura-01",
+    "title": "Figura · 01",
+    "titleIsEditorial": true,
+    "collectionSlug": "figura",
+    "visualComposition": "artwork.photo.figura-1",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "figura1.png",
+        "alt": "artwork.photo.figura-1",
+        "visualDescription": "artwork.photo.figura-1"
+      },
+      {
+        "originalName": "figura2.png",
+        "alt": "artwork.photo.figura-2",
+        "visualDescription": "artwork.photo.figura-2"
+      }
+    ]
+  },
+  {
+    "id": "figura-03",
+    "title": "Figura · 03",
+    "titleIsEditorial": true,
+    "collectionSlug": "figura",
+    "visualComposition": "artwork.photo.figura-3",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "figura3.png",
+        "alt": "artwork.photo.figura-3",
+        "visualDescription": "artwork.photo.figura-3"
+      }
+    ]
+  },
+  {
+    "id": "figura-04",
+    "title": "Figura · 04",
+    "titleIsEditorial": true,
+    "collectionSlug": "figura",
+    "visualComposition": "artwork.photo.figura-4",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "figura4.png",
+        "alt": "artwork.photo.figura-4",
+        "visualDescription": "artwork.photo.figura-4"
+      }
+    ]
+  },
+  {
+    "id": "figura-05",
+    "title": "Figura · 05",
+    "titleIsEditorial": true,
+    "collectionSlug": "figura",
+    "visualComposition": "artwork.photo.figura-5",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "figura5.png",
+        "alt": "artwork.photo.figura-5",
+        "visualDescription": "artwork.photo.figura-5"
+      }
+    ]
+  },
+  {
+    "id": "figura-06",
+    "title": "Figura · 06",
+    "titleIsEditorial": true,
+    "collectionSlug": "figura",
+    "visualComposition": "artwork.photo.figura-6",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "figura6.png",
+        "alt": "artwork.photo.figura-6",
+        "visualDescription": "artwork.photo.figura-6"
+      }
+    ]
+  },
+  {
+    "id": "hurna-01",
+    "title": "Hurna",
+    "titleIsEditorial": true,
+    "collectionSlug": "hurna",
+    "visualComposition": "artwork.photo.hurna-1",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "hurna.png",
+        "alt": "artwork.photo.hurna-1",
+        "visualDescription": "artwork.photo.hurna-1"
+      }
+    ]
+  },
+  {
+    "id": "mascara-01",
+    "title": "Máscara",
+    "titleIsEditorial": true,
+    "collectionSlug": "mascara",
+    "visualComposition": "artwork.photo.mascara-1",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "mascara.png",
+        "alt": "artwork.photo.mascara-1",
+        "visualDescription": "artwork.photo.mascara-1"
+      }
+    ]
+  },
+  {
+    "id": "obra-02",
+    "title": "Obra · 02",
+    "titleIsEditorial": true,
+    "collectionSlug": "obra",
+    "visualComposition": "artwork.photo.obra-2",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "Obra 2.png",
+        "alt": "artwork.photo.obra-2",
+        "visualDescription": "artwork.photo.obra-2"
+      }
+    ]
+  },
+  {
+    "id": "obra-03",
+    "title": "Obra · 03",
+    "titleIsEditorial": true,
+    "collectionSlug": "obra",
+    "visualComposition": "artwork.photo.obra-3",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "Obra 3.png",
+        "alt": "artwork.photo.obra-3",
+        "visualDescription": "artwork.photo.obra-3"
+      }
+    ]
+  },
+  {
+    "id": "vasija-01",
+    "title": "Vasija silvadora",
+    "titleIsEditorial": true,
+    "collectionSlug": "vasija-silvadora",
+    "visualComposition": "artwork.photo.obra-4",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "Obra 4.jpg",
+        "alt": "artwork.photo.obra-4",
+        "visualDescription": "artwork.photo.obra-4"
+      },
+      {
+        "originalName": "Vasija silvadora 1.jpg",
+        "alt": "artwork.photo.vasija-1",
+        "visualDescription": "artwork.photo.vasija-1"
+      },
+      {
+        "originalName": "Vasija silvadora 2.jpg",
+        "alt": "artwork.photo.vasija-2",
+        "visualDescription": "artwork.photo.vasija-2"
+      },
+      {
+        "originalName": "Vasija silvadora 3.jpeg",
+        "alt": "artwork.photo.vasija-3",
+        "visualDescription": "artwork.photo.vasija-3"
+      }
+    ]
+  },
+  {
+    "id": "obra-05",
+    "title": "Obra · 05",
+    "titleIsEditorial": true,
+    "collectionSlug": "obra",
+    "visualComposition": "artwork.photo.obra-5",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "Obra 5.png",
+        "alt": "artwork.photo.obra-5",
+        "visualDescription": "artwork.photo.obra-5"
+      }
+    ]
+  },
+  {
+    "id": "obra-06",
+    "title": "Obra · 06",
+    "titleIsEditorial": true,
+    "collectionSlug": "obra",
+    "visualComposition": "artwork.photo.obra-6",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "Obra 6.png",
+        "alt": "artwork.photo.obra-6",
+        "visualDescription": "artwork.photo.obra-6"
+      }
+    ]
+  },
+  {
+    "id": "ojo-01",
+    "title": "Ojo de loca",
+    "titleIsEditorial": true,
+    "collectionSlug": "ojodeloca",
+    "visualComposition": "artwork.photo.ojo-1",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "ojodeloca1.png",
+        "alt": "artwork.photo.ojo-1",
+        "visualDescription": "artwork.photo.ojo-1"
+      },
+      {
+        "originalName": "ojodeloca2.png",
+        "alt": "artwork.photo.ojo-2",
+        "visualDescription": "artwork.photo.ojo-2"
+      },
+      {
+        "originalName": "ojodeloca3.png",
+        "alt": "artwork.photo.ojo-3",
+        "visualDescription": "artwork.photo.ojo-3"
+      }
+    ]
+  },
+  {
+    "id": "pinchuda-01",
+    "title": "Pinchuda",
+    "titleIsEditorial": true,
+    "collectionSlug": "pinchuda",
+    "visualComposition": "artwork.photo.pinchuda-2",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "pichuda2.png",
+        "alt": "artwork.photo.pinchuda-2",
+        "visualDescription": "artwork.photo.pinchuda-2"
+      },
+      {
+        "originalName": "pinchuda1.png",
+        "alt": "artwork.photo.pinchuda-1",
+        "visualDescription": "artwork.photo.pinchuda-1"
+      }
+    ]
+  },
+  {
+    "id": "tambor-01",
+    "title": "Tambor",
+    "titleIsEditorial": true,
+    "collectionSlug": "tambor",
+    "visualComposition": "artwork.photo.tambor-1",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "Tambor 1.png",
+        "alt": "artwork.photo.tambor-1",
+        "visualDescription": "artwork.photo.tambor-1"
+      },
+      {
+        "originalName": "Tambor 3.png",
+        "alt": "artwork.photo.tambor-3",
+        "visualDescription": "artwork.photo.tambor-3"
+      },
+      {
+        "originalName": "Tambor 4.png",
+        "alt": "artwork.photo.tambor-4",
+        "visualDescription": "artwork.photo.tambor-4"
+      }
+    ]
+  },
+  {
+    "id": "biblioteca-01",
+    "title": "Taza biblioteca · 01",
+    "titleIsEditorial": true,
+    "collectionSlug": "taza-biblioteca",
+    "visualComposition": "artwork.photo.biblioteca-1",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "Taza biblioteca 1.png",
+        "alt": "artwork.photo.biblioteca-1",
+        "visualDescription": "artwork.photo.biblioteca-1"
+      }
+    ]
+  },
+  {
+    "id": "biblioteca-02",
+    "title": "Taza biblioteca · 02",
+    "titleIsEditorial": true,
+    "collectionSlug": "taza-biblioteca",
+    "visualComposition": "artwork.photo.biblioteca-2",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "Taza biblioteca 2.png",
+        "alt": "artwork.photo.biblioteca-2",
+        "visualDescription": "artwork.photo.biblioteca-2"
+      }
+    ]
+  },
+  {
+    "id": "peluca-01",
+    "title": "Vasija silvadora peluca",
+    "titleIsEditorial": true,
+    "collectionSlug": "vasijasilvadora-peluca",
+    "visualComposition": "artwork.photo.peluca-1",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "vasijasilvadora_peluca1.png",
+        "alt": "artwork.photo.peluca-1",
+        "visualDescription": "artwork.photo.peluca-1"
+      },
+      {
+        "originalName": "vasijasilvadora_peluca3.png",
+        "alt": "artwork.photo.peluca-3",
+        "visualDescription": "artwork.photo.peluca-3"
+      },
+      {
+        "originalName": "vasijasilvadora_peluca4.png",
+        "alt": "artwork.photo.peluca-4",
+        "visualDescription": "artwork.photo.peluca-4"
+      },
+      {
+        "originalName": "vasijasilvadora_peluca5.png",
+        "alt": "artwork.photo.peluca-5",
+        "visualDescription": "artwork.photo.peluca-5"
+      },
+      {
+        "originalName": "vasijasilvadora_peluca6.png",
+        "alt": "artwork.photo.peluca-6",
+        "visualDescription": "artwork.photo.peluca-6"
+      }
+    ]
+  },
+  {
+    "id": "picolargo-01",
+    "title": "Vasija silvadora picolargo",
+    "titleIsEditorial": true,
+    "collectionSlug": "vasijasilvadora-picolargo",
+    "visualComposition": "artwork.photo.picolargo-1",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "vasijasilvadora_picolargo.png",
+        "alt": "artwork.photo.picolargo-1",
+        "visualDescription": "artwork.photo.picolargo-1"
+      },
+      {
+        "originalName": "vasijasilvadora_picolargo2.png",
+        "alt": "artwork.photo.picolargo-2",
+        "visualDescription": "artwork.photo.picolargo-2"
+      }
+    ]
+  },
+  {
+    "id": "venus-01",
+    "title": "Venus silbato",
+    "titleIsEditorial": true,
+    "collectionSlug": "venus-silbato",
+    "visualComposition": "artwork.photo.venus-1",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "venus_silbato.png",
+        "alt": "artwork.photo.venus-1",
+        "visualDescription": "artwork.photo.venus-1"
+      }
+    ]
+  },
+  {
+    "id": "aros-01",
+    "title": "Aros y collares · 01",
+    "titleIsEditorial": true,
+    "collectionSlug": "aros-collares",
+    "visualComposition": "artwork.photo.aros-1",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "aros_collares1.jpg",
+        "alt": "artwork.photo.aros-1",
+        "visualDescription": "artwork.photo.aros-1"
+      }
+    ]
+  },
+  {
+    "id": "aros-02",
+    "title": "Aros y collares · 02",
+    "titleIsEditorial": true,
+    "collectionSlug": "aros-collares",
+    "visualComposition": "artwork.photo.aros-2",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "aros_collares2.jpg",
+        "alt": "artwork.photo.aros-2",
+        "visualDescription": "artwork.photo.aros-2"
+      }
+    ]
+  },
+  {
+    "id": "aros-03",
+    "title": "Aros y collares · 03",
+    "titleIsEditorial": true,
+    "collectionSlug": "aros-collares",
+    "visualComposition": "artwork.photo.aros-3",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "aros_collares3.jpg",
+        "alt": "artwork.photo.aros-3",
+        "visualDescription": "artwork.photo.aros-3"
+      }
+    ]
+  },
+  {
+    "id": "aros-04",
+    "title": "Aros y collares · 04",
+    "titleIsEditorial": true,
+    "collectionSlug": "aros-collares",
+    "visualComposition": "artwork.photo.aros-4",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "aros_collares4.jpg",
+        "alt": "artwork.photo.aros-4",
+        "visualDescription": "artwork.photo.aros-4"
+      }
+    ]
+  },
+  {
+    "id": "aros-05",
+    "title": "Aros y collares · 05",
+    "titleIsEditorial": true,
+    "collectionSlug": "aros-collares",
+    "visualComposition": "artwork.photo.aros-5",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "aros_collares5.jpg",
+        "alt": "artwork.photo.aros-5",
+        "visualDescription": "artwork.photo.aros-5"
+      }
+    ]
+  },
+  {
+    "id": "aros-06",
+    "title": "Aros y collares · 06",
+    "titleIsEditorial": true,
+    "collectionSlug": "aros-collares",
+    "visualComposition": "artwork.photo.aros-6",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "aros_collares6.jpg",
+        "alt": "artwork.photo.aros-6",
+        "visualDescription": "artwork.photo.aros-6"
+      }
+    ]
+  },
+  {
+    "id": "aros-07",
+    "title": "Aros y collares · 07",
+    "titleIsEditorial": true,
+    "collectionSlug": "aros-collares",
+    "visualComposition": "artwork.photo.aros-7",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "aros_collares7.jpg",
+        "alt": "artwork.photo.aros-7",
+        "visualDescription": "artwork.photo.aros-7"
+      }
+    ]
+  },
+  {
+    "id": "aros-08",
+    "title": "Aros y collares · 08",
+    "titleIsEditorial": true,
+    "collectionSlug": "aros-collares",
+    "visualComposition": "artwork.photo.aros-8",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "aros_collares8.jpg",
+        "alt": "artwork.photo.aros-8",
+        "visualDescription": "artwork.photo.aros-8"
+      }
+    ]
+  },
+  {
+    "id": "aros-09",
+    "title": "Aros y collares · 09",
+    "titleIsEditorial": true,
+    "collectionSlug": "aros-collares",
+    "visualComposition": "artwork.photo.aros-9",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "aros_collares9.jpg",
+        "alt": "artwork.photo.aros-9",
+        "visualDescription": "artwork.photo.aros-9"
+      }
+    ]
+  },
+  {
+    "id": "aros-10",
+    "title": "Aros y collares · 10",
+    "titleIsEditorial": true,
+    "collectionSlug": "aros-collares",
+    "visualComposition": "artwork.photo.aros-10",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "aros_collares10.jpg",
+        "alt": "artwork.photo.aros-10",
+        "visualDescription": "artwork.photo.aros-10"
+      }
+    ]
+  },
+  {
+    "id": "aros-11",
+    "title": "Aros y collares · 11",
+    "titleIsEditorial": true,
+    "collectionSlug": "aros-collares",
+    "visualComposition": "artwork.photo.aros-11",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "aros_collares11.jpg",
+        "alt": "artwork.photo.aros-11",
+        "visualDescription": "artwork.photo.aros-11"
+      }
+    ]
+  },
+  {
+    "id": "aros-12",
+    "title": "Aros y collares · 12",
+    "titleIsEditorial": true,
+    "collectionSlug": "aros-collares",
+    "visualComposition": "artwork.photo.aros-12",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "aros_collares12.jpg",
+        "alt": "artwork.photo.aros-12",
+        "visualDescription": "artwork.photo.aros-12"
+      }
+    ]
+  },
+  {
+    "id": "aros-13",
+    "title": "Aros y collares · 13",
+    "titleIsEditorial": true,
+    "collectionSlug": "aros-collares",
+    "visualComposition": "artwork.photo.aros-13",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "aros_collares13.jpg",
+        "alt": "artwork.photo.aros-13",
+        "visualDescription": "artwork.photo.aros-13"
+      }
+    ]
+  },
+  {
+    "id": "aros-14",
+    "title": "Aros y collares · 14",
+    "titleIsEditorial": true,
+    "collectionSlug": "aros-collares",
+    "visualComposition": "artwork.photo.aros-14",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "aros_collares14.jpg",
+        "alt": "artwork.photo.aros-14",
+        "visualDescription": "artwork.photo.aros-14"
+      }
+    ]
+  },
+  {
+    "id": "aros-15",
+    "title": "Aros y collares · 15",
+    "titleIsEditorial": true,
+    "collectionSlug": "aros-collares",
+    "visualComposition": "artwork.photo.aros-15",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "aros_collares15.jpg",
+        "alt": "artwork.photo.aros-15",
+        "visualDescription": "artwork.photo.aros-15"
+      }
+    ]
+  },
+  {
+    "id": "aros-16",
+    "title": "Aros y collares · 16",
+    "titleIsEditorial": true,
+    "collectionSlug": "aros-collares",
+    "visualComposition": "artwork.photo.aros-16",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "aros_collares16.jpg",
+        "alt": "artwork.photo.aros-16",
+        "visualDescription": "artwork.photo.aros-16"
+      }
+    ]
+  },
+  {
+    "id": "aros-17",
+    "title": "Aros y collares · 17",
+    "titleIsEditorial": true,
+    "collectionSlug": "aros-collares",
+    "visualComposition": "artwork.photo.aros-17",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "aros_collares17.jpg",
+        "alt": "artwork.photo.aros-17",
+        "visualDescription": "artwork.photo.aros-17"
+      }
+    ]
+  },
+  {
+    "id": "aros-18",
+    "title": "Aros y collares · 18",
+    "titleIsEditorial": true,
+    "collectionSlug": "aros-collares",
+    "visualComposition": "artwork.photo.aros-18",
+    "materials": [],
+    "mainMaterial": null,
+    "complementaryMaterials": [],
+    "techniques": [],
+    "modelingTechnique": null,
+    "surfaceTreatment": null,
+    "glazesOrPigments": null,
+    "firingTechnique": null,
+    "artistIntent": null,
+    "artistIntentVerified": false,
+    "function": null,
+    "curatorialReading": null,
+    "verificationSources": [],
+    "reviewStatus": "visual-observed-pending-artist",
+    "images": [
+      {
+        "originalName": "aros_collares18.jpg",
+        "alt": "artwork.photo.aros-18",
+        "visualDescription": "artwork.photo.aros-18"
+      }
+    ]
+  }
+]

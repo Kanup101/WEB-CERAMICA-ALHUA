@@ -1,3 +1,5 @@
+import { getCollections, getCollectionBySlug } from "@/data/collections";
+import { getPhotoContent } from "@/data/artworks";
 import { productRecords, getProductBySlug } from "@/data/products";
 import { workshopRecords, getWorkshopBySlug } from "@/data/workshops";
 import { experienceRecords, getExperienceBySlug } from "@/data/experiences";
@@ -5,7 +7,7 @@ import { getTranslator } from "./messages";
 import { localizedPath, locales, type Locale } from "./config";
 import type { Metadata } from "next";
 
-export const publicPaths = ["/", "/tienda", "/talleres", "/experiencias", "/sobre-yanina", "/sobre-alhua", "/contacto", "/checkout",
+export const publicPaths = ["/", "/colecciones", ...getCollections().map(item => `/colecciones/${item.slug}`), "/tienda", "/talleres", "/experiencias", "/sobre-yanina", "/sobre-alhua", "/contacto", "/checkout",
   ...productRecords.map(item => `/tienda/${item.slug}`), ...workshopRecords.map(item => `/talleres/${item.slug}`), ...experienceRecords.map(item => `/experiencias/${item.slug}`)];
 
 export function siteOrigin() {
@@ -18,6 +20,7 @@ export function routeMetadata(path: string, locale: Locale): Metadata {
   const t = getTranslator(locale);
   let title = t("Ceramica Creativa");
   let description = t("Yanina Cardozo, artista ceramista. Piezas unicas de ceramica artesanal argentina y talleres online de ceramica creativa.");
+  if (path.startsWith("/colecciones")) { title = t("Colecciones"); description = t("Fotografías y fichas de las colecciones de Yanina Cardozo."); }
   if (path.startsWith("/tienda")) { title = t("Tienda"); description = t("Explora piezas unicas de ceramica artesanal argentina creadas por Yanina Cardozo: tazas, cuencos, platos y objetos decorativos hechos a mano."); }
   if (path.startsWith("/talleres")) { title = t("Talleres online"); description = t("Talleres online de ceramica creativa con Yanina Cardozo para aprender tecnicas manuales, esmaltes y piezas utilitarias desde Argentina."); }
   if (path.startsWith("/experiencias")) { title = t("Experiencias de cerámica en Salta"); description = t("Cerámica artesanal y turismo cultural en Salta con Yanina Cardozo. Barro, mates y encuentros: una actividad creativa para turistas, USD 35 por persona."); }
@@ -29,13 +32,16 @@ export function routeMetadata(path: string, locale: Locale): Metadata {
   if (slug && section === "talleres") { const workshop = getWorkshopBySlug(slug, locale); if (workshop) { title = workshop.title; description = workshop.description; } }
   if (slug && section === "experiencias") { const experience = getExperienceBySlug(slug, locale); if (experience) title = `${experience.title} · ${t("Experiencias de cerámica en Salta")}`; }
   if (!publicPaths.includes(path)) { title = t("Página no encontrada"); description = t("No encontramos esta página. Podés volver al inicio y seguir explorando."); }
+  const collection = section === "colecciones" && slug ? getCollectionBySlug(slug) : undefined;
+  if (collection) { title = `${collection.name} | ${t("Colecciones")}`; description = `${collection.name}. ${t("Fotografías y fichas de las colecciones de Yanina Cardozo.")}`; }
   const fullTitle = `${title} | Yanina Cardozo`;
   const origin = siteOrigin();
+  const collectionCover = collection ? collection.images.find(image => image.id === collection.cover) ?? collection.images[0] : path === "/colecciones" ? getCollections()[0]?.images[0] : undefined;
   const canonicalPath = path === "/sobre-alhua" ? "/sobre-yanina" : path;
   return {
     title: { absolute: fullTitle }, description,
     robots: path === "/checkout" || !publicPaths.includes(path) ? { index: false, follow: true } : undefined,
     alternates: origin ? { canonical: origin + localizedPath(canonicalPath, locale), languages: Object.fromEntries(locales.map(value=>[value, origin + localizedPath(canonicalPath, value)])) } : undefined,
-    openGraph: { title: fullTitle, description, type: "website", locale: {es:"es_AR",en:"en_US",de:"de_DE",fr:"fr_FR",ko:"ko_KR","zh-CN":"zh_CN"}[locale], alternateLocale: locales.filter(value=>value!==locale).map(value=>({es:"es_AR",en:"en_US",de:"de_DE",fr:"fr_FR",ko:"ko_KR","zh-CN":"zh_CN"}[value])) },
+    openGraph: { images: collectionCover && origin ? [{ url: origin + collectionCover.src, width: collectionCover.width, height: collectionCover.height, alt: getPhotoContent(collectionCover.originalName, t)?.alt ?? collectionCover.alt }] : undefined, title: fullTitle, description, type: "website", locale: {es:"es_AR",en:"en_US",de:"de_DE",fr:"fr_FR",ko:"ko_KR","zh-CN":"zh_CN"}[locale], alternateLocale: locales.filter(value=>value!==locale).map(value=>({es:"es_AR",en:"en_US",de:"de_DE",fr:"fr_FR",ko:"ko_KR","zh-CN":"zh_CN"}[value])) },
   };
 }

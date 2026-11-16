@@ -14,6 +14,8 @@ export function Footer() {
         <div>
           <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-[#D8B79C]">{t("Explorar")}</h3>
           <div className="mt-4 flex flex-col gap-3 text-sm text-[#F4E8D9]">
+            <Link href="/">{t("Inicio")}</Link>
+            <Link href="/colecciones">{t("Colecciones")}</Link>
             <Link href="/tienda">{t("Tienda")}</Link>
             <Link href="/talleres">{t("Talleres")}</Link>
             <Link href="/experiencias">{t("Experiencias")}</Link>

@@ -2,23 +2,20 @@
 import { useI18n } from "@/lib/i18n/provider";
 import Image from "next/image";
 import { ArrowRight, Flame, Hand, Heart, Leaf, Sparkles } from "lucide-react";
-import { ProductGrid } from "@/components/commerce/ProductGrid";
+import { CollectionsFeature } from "@/components/collections/CollectionPages";
 import { VideoBlock } from "@/components/media/VideoBlock";
 import { NewsletterForm } from "@/components/shared/NewsletterForm";
 import { SectionTitle } from "@/components/shared/SectionTitle";
 import { WhatsAppButton } from "@/components/shared/WhatsAppButton";
 import { ButtonLink } from "@/components/ui/button";
 import { WorkshopCard } from "@/components/workshops/WorkshopCard";
-import { getProducts } from "@/data/products";
 import { getWorkshops } from "@/data/workshops";
 import { getExperiences } from "@/data/experiences";
 import { ExperienceCard } from "@/components/experiences/ExperiencePages";
 export default function Home() {
     const { t, locale } = useI18n();
     const experiences = getExperiences(locale);
-    const products = getProducts(locale);
     const workshops = getWorkshops(locale);
-    const featuredProducts = products.filter((product) => product.featured).slice(0, 3);
     const featuredWorkshops = workshops.filter((workshop) => workshop.featured).slice(0, 2);
     return (<div>
       <section className="relative overflow-hidden bg-[#E9B8A0]">
@@ -44,12 +41,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
-        <SectionTitle eyebrow={t("Coleccion")} title={t("Piezas destacadas")} description={t("Series pequenas y piezas unicas, creadas para acompanar rituales diarios con textura, forma y presencia.")}/>
-        <div className="mt-10">
-          <ProductGrid products={featuredProducts}/>
-        </div>
-      </section>
+      <CollectionsFeature />
 
       <section className="bg-[#EFE4D4] py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

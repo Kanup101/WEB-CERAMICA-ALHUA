@@ -1,0 +1,1412 @@
+{
+  "source": "public/colecciones",
+  "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+  "found": 58,
+  "processed": 58,
+  "originalBytes": 127997967,
+  "optimizedBytes": 11255280,
+  "reduction": 91.20667283723343,
+  "warnings": [
+    "Hurna: grafia conservada del archivo; confirmar titulo artistico.",
+    "bocadeloca.png: numeración alternativa, edición o nombre sin número; conservado para revisión.",
+    "figura2.png: duplicado binario de figura1.png; ambos conservados.",
+    "figura2.png: mismos píxeles que figura1.png; ambos conservados.",
+    "hurna.png: numeración alternativa, edición o nombre sin número; conservado para revisión.",
+    "mascara.png: numeración alternativa, edición o nombre sin número; conservado para revisión.",
+    "Vasija silvadora 1.jpg: duplicado binario de Obra 4.jpg; ambos conservados.",
+    "Vasija silvadora 1.jpg: mismos píxeles que Obra 4.jpg; ambos conservados.",
+    "vasijasilvadora_picolargo.png: numeración alternativa, edición o nombre sin número; conservado para revisión.",
+    "venus_silbato.png: numeración alternativa, edición o nombre sin número; conservado para revisión."
+  ],
+  "errors": [],
+  "collections": [
+    {
+      "id": "ojodeloca",
+      "slug": "ojodeloca",
+      "name": "Ojo de loca",
+      "cover": "d3f7922b06e74d12",
+      "order": 0,
+      "published": true,
+      "images": [
+        {
+          "id": "d3f7922b06e74d12",
+          "src": "/images/collections/ojodeloca/ojodeloca1-d3f7922b06e74d12-a74275e0f0.webp",
+          "thumbnail": "/images/collections/ojodeloca/ojodeloca1-d3f7922b06e74d12-a74275e0f0-thumb.webp",
+          "originalName": "ojodeloca1.png",
+          "order": 0,
+          "width": 1024,
+          "height": 1536,
+          "alt": "Ojo de loca",
+          "sourceHash": "a74275e0f0be4dd68fed5544ca20b061af3bf1aebcd887d209521febd14bf4ca",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2090404,
+          "optimizedBytes": 127432,
+          "thumbnailBytes": 27660,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1024,
+            "height": 1536,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "6cf107a2e5a6b792",
+          "src": "/images/collections/ojodeloca/ojodeloca2-6cf107a2e5a6b792-f402767ea0.webp",
+          "thumbnail": "/images/collections/ojodeloca/ojodeloca2-6cf107a2e5a6b792-f402767ea0-thumb.webp",
+          "originalName": "ojodeloca2.png",
+          "order": 1,
+          "width": 1024,
+          "height": 1536,
+          "alt": "Ojo de loca",
+          "sourceHash": "f402767ea078dcc80083d9c4e8952952d0ccbb58e5478759932aff4fb4313292",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2025073,
+          "optimizedBytes": 109200,
+          "thumbnailBytes": 25052,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1024,
+            "height": 1536,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "dc8f3c4fadbdd612",
+          "src": "/images/collections/ojodeloca/ojodeloca3-dc8f3c4fadbdd612-4a5dbba892.webp",
+          "thumbnail": "/images/collections/ojodeloca/ojodeloca3-dc8f3c4fadbdd612-4a5dbba892-thumb.webp",
+          "originalName": "ojodeloca3.png",
+          "order": 2,
+          "width": 1024,
+          "height": 1536,
+          "alt": "Ojo de loca",
+          "sourceHash": "4a5dbba8925b81b6296d8e2b26b4f227daafd556e6ed0264e73e557bed65d90b",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 1919782,
+          "optimizedBytes": 90234,
+          "thumbnailBytes": 20486,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1024,
+            "height": 1536,
+            "orientation": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "aros-collares",
+      "slug": "aros-collares",
+      "name": "Aros y collares",
+      "cover": "b281a39d1e68ce31",
+      "order": 1,
+      "published": false,
+      "images": [
+        {
+          "id": "b281a39d1e68ce31",
+          "src": "/images/collections/aros-collares/aros-collares1-b281a39d1e68ce31-476d21a007.webp",
+          "thumbnail": "/images/collections/aros-collares/aros-collares1-b281a39d1e68ce31-476d21a007-thumb.webp",
+          "originalName": "aros_collares1.jpg",
+          "order": 0,
+          "width": 1379,
+          "height": 2400,
+          "alt": "Aros y collares",
+          "sourceHash": "476d21a0079a63312b9dfb7624280467d5e0e79e63ed6f7b8bd6e7f53df708e1",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2669916,
+          "optimizedBytes": 137992,
+          "thumbnailBytes": 27668,
+          "originalMetadata": {
+            "format": "jpeg",
+            "width": 2205,
+            "height": 3838,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "6878c1f3e1558f42",
+          "src": "/images/collections/aros-collares/aros-collares2-6878c1f3e1558f42-5bfae1eb21.webp",
+          "thumbnail": "/images/collections/aros-collares/aros-collares2-6878c1f3e1558f42-5bfae1eb21-thumb.webp",
+          "originalName": "aros_collares2.jpg",
+          "order": 1,
+          "width": 1351,
+          "height": 2400,
+          "alt": "Aros y collares",
+          "sourceHash": "5bfae1eb21b6a96d83e008f177622e93efc86511ffa407df7bdd6d948ec6a2b7",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2561399,
+          "optimizedBytes": 100262,
+          "thumbnailBytes": 19202,
+          "originalMetadata": {
+            "format": "jpeg",
+            "width": 2296,
+            "height": 4080,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "3ec5c91f02c2571d",
+          "src": "/images/collections/aros-collares/aros-collares3-3ec5c91f02c2571d-8c33d01955.webp",
+          "thumbnail": "/images/collections/aros-collares/aros-collares3-3ec5c91f02c2571d-8c33d01955-thumb.webp",
+          "originalName": "aros_collares3.jpg",
+          "order": 2,
+          "width": 1351,
+          "height": 2400,
+          "alt": "Aros y collares",
+          "sourceHash": "8c33d01955dad2154b85c6da27b2c45df030449af854df3c317eed2699285951",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2792843,
+          "optimizedBytes": 74506,
+          "thumbnailBytes": 16296,
+          "originalMetadata": {
+            "format": "jpeg",
+            "width": 4080,
+            "height": 2296,
+            "orientation": 6
+          }
+        },
+        {
+          "id": "b75a7310e6c9e614",
+          "src": "/images/collections/aros-collares/aros-collares4-b75a7310e6c9e614-987644ba0e.webp",
+          "thumbnail": "/images/collections/aros-collares/aros-collares4-b75a7310e6c9e614-987644ba0e-thumb.webp",
+          "originalName": "aros_collares4.jpg",
+          "order": 3,
+          "width": 1307,
+          "height": 2400,
+          "alt": "Aros y collares",
+          "sourceHash": "987644ba0ec7d420d4971b0a6da9c8a0eff37fe866702a8f57e8ee26bd8d1528",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2743217,
+          "optimizedBytes": 97410,
+          "thumbnailBytes": 19556,
+          "originalMetadata": {
+            "format": "jpeg",
+            "width": 1869,
+            "height": 3432,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "4afb0990cf5b2e17",
+          "src": "/images/collections/aros-collares/aros-collares5-4afb0990cf5b2e17-a33b216ecc.webp",
+          "thumbnail": "/images/collections/aros-collares/aros-collares5-4afb0990cf5b2e17-a33b216ecc-thumb.webp",
+          "originalName": "aros_collares5.jpg",
+          "order": 4,
+          "width": 1247,
+          "height": 2400,
+          "alt": "Aros y collares",
+          "sourceHash": "a33b216ecc11902ae62e839f1cec60b55433af96b125101a5ab71be4ea9dd011",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2612603,
+          "optimizedBytes": 95312,
+          "thumbnailBytes": 16926,
+          "originalMetadata": {
+            "format": "jpeg",
+            "width": 1621,
+            "height": 3120,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "2fae2d9caa3913f1",
+          "src": "/images/collections/aros-collares/aros-collares6-2fae2d9caa3913f1-8ca94d1d06.webp",
+          "thumbnail": "/images/collections/aros-collares/aros-collares6-2fae2d9caa3913f1-8ca94d1d06-thumb.webp",
+          "originalName": "aros_collares6.jpg",
+          "order": 5,
+          "width": 1192,
+          "height": 2400,
+          "alt": "Aros y collares",
+          "sourceHash": "8ca94d1d063ce072c1af9c76adc6dec28ae2386c2d51019e7e5da02efc0249c2",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2534456,
+          "optimizedBytes": 127040,
+          "thumbnailBytes": 23822,
+          "originalMetadata": {
+            "format": "jpeg",
+            "width": 1885,
+            "height": 3796,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "0df12065c2b04843",
+          "src": "/images/collections/aros-collares/aros-collares7-0df12065c2b04843-0019701396.webp",
+          "thumbnail": "/images/collections/aros-collares/aros-collares7-0df12065c2b04843-0019701396-thumb.webp",
+          "originalName": "aros_collares7.jpg",
+          "order": 6,
+          "width": 1351,
+          "height": 2400,
+          "alt": "Aros y collares",
+          "sourceHash": "0019701396c61a7434fe7cc68a72b915542677a30e27a1c59fadceaa1d949c07",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2627808,
+          "optimizedBytes": 115352,
+          "thumbnailBytes": 21670,
+          "originalMetadata": {
+            "format": "jpeg",
+            "width": 2296,
+            "height": 4080,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "9887c6fbf9b56014",
+          "src": "/images/collections/aros-collares/aros-collares8-9887c6fbf9b56014-e0c6c7f822.webp",
+          "thumbnail": "/images/collections/aros-collares/aros-collares8-9887c6fbf9b56014-e0c6c7f822-thumb.webp",
+          "originalName": "aros_collares8.jpg",
+          "order": 7,
+          "width": 1351,
+          "height": 2400,
+          "alt": "Aros y collares",
+          "sourceHash": "e0c6c7f822bec120224213a618a7dcc4d1ae3e9f9b70835fb67171b5caed73f1",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 1721398,
+          "optimizedBytes": 200340,
+          "thumbnailBytes": 30924,
+          "originalMetadata": {
+            "format": "jpeg",
+            "width": 2296,
+            "height": 4080,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "2cf75f461f8e9165",
+          "src": "/images/collections/aros-collares/aros-collares9-2cf75f461f8e9165-552e61489c.webp",
+          "thumbnail": "/images/collections/aros-collares/aros-collares9-2cf75f461f8e9165-552e61489c-thumb.webp",
+          "originalName": "aros_collares9.jpg",
+          "order": 8,
+          "width": 1351,
+          "height": 2400,
+          "alt": "Aros y collares",
+          "sourceHash": "552e61489ce881fb46936d4d92e9971321f42ba84181f91da5a634edffade5e4",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2530867,
+          "optimizedBytes": 119742,
+          "thumbnailBytes": 26274,
+          "originalMetadata": {
+            "format": "jpeg",
+            "width": 4080,
+            "height": 2296,
+            "orientation": 6
+          }
+        },
+        {
+          "id": "d58421822dbe2a3c",
+          "src": "/images/collections/aros-collares/aros-collares10-d58421822dbe2a3c-83452ebea6.webp",
+          "thumbnail": "/images/collections/aros-collares/aros-collares10-d58421822dbe2a3c-83452ebea6-thumb.webp",
+          "originalName": "aros_collares10.jpg",
+          "order": 9,
+          "width": 1392,
+          "height": 2400,
+          "alt": "Aros y collares",
+          "sourceHash": "83452ebea68fe664bda845a57d95b9097b4cb01bf10c0e984c355b7ef0ce6345",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 3010000,
+          "optimizedBytes": 158168,
+          "thumbnailBytes": 29936,
+          "originalMetadata": {
+            "format": "jpeg",
+            "width": 2046,
+            "height": 3527,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "fcc2183c3b132112",
+          "src": "/images/collections/aros-collares/aros-collares11-fcc2183c3b132112-4eb574c0d6.webp",
+          "thumbnail": "/images/collections/aros-collares/aros-collares11-fcc2183c3b132112-4eb574c0d6-thumb.webp",
+          "originalName": "aros_collares11.jpg",
+          "order": 10,
+          "width": 1227,
+          "height": 2400,
+          "alt": "Aros y collares",
+          "sourceHash": "4eb574c0d6697ceae579dba19a0f416801f481c7d11c03ff115324f074de02af",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 3235461,
+          "optimizedBytes": 147748,
+          "thumbnailBytes": 25804,
+          "originalMetadata": {
+            "format": "jpeg",
+            "width": 1958,
+            "height": 3829,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "a5316f168e7ef4f0",
+          "src": "/images/collections/aros-collares/aros-collares12-a5316f168e7ef4f0-d5ef5a5cce.webp",
+          "thumbnail": "/images/collections/aros-collares/aros-collares12-a5316f168e7ef4f0-d5ef5a5cce-thumb.webp",
+          "originalName": "aros_collares12.jpg",
+          "order": 11,
+          "width": 1440,
+          "height": 2400,
+          "alt": "Aros y collares",
+          "sourceHash": "d5ef5a5cce487c07996663fd7bfade36351b08d91939924495c8bd38f2c31332",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2409637,
+          "optimizedBytes": 116730,
+          "thumbnailBytes": 20574,
+          "originalMetadata": {
+            "format": "jpeg",
+            "width": 1828,
+            "height": 3047,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "abfa073db5913350",
+          "src": "/images/collections/aros-collares/aros-collares13-abfa073db5913350-3119b0f7e2.webp",
+          "thumbnail": "/images/collections/aros-collares/aros-collares13-abfa073db5913350-3119b0f7e2-thumb.webp",
+          "originalName": "aros_collares13.jpg",
+          "order": 12,
+          "width": 1235,
+          "height": 2400,
+          "alt": "Aros y collares",
+          "sourceHash": "3119b0f7e286ec86fc87a25a49cd5ce186131f90a29342448bf7194fc026d2c4",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2654876,
+          "optimizedBytes": 88656,
+          "thumbnailBytes": 15984,
+          "originalMetadata": {
+            "format": "jpeg",
+            "width": 1531,
+            "height": 2975,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "c5e3599817eb8c39",
+          "src": "/images/collections/aros-collares/aros-collares14-c5e3599817eb8c39-a7e2fb834a.webp",
+          "thumbnail": "/images/collections/aros-collares/aros-collares14-c5e3599817eb8c39-a7e2fb834a-thumb.webp",
+          "originalName": "aros_collares14.jpg",
+          "order": 13,
+          "width": 1376,
+          "height": 2400,
+          "alt": "Aros y collares",
+          "sourceHash": "a7e2fb834a75af741ae6abe0ad3e178b70fc1228efb71ba697952ffb397aecbc",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2333745,
+          "optimizedBytes": 89510,
+          "thumbnailBytes": 18064,
+          "originalMetadata": {
+            "format": "jpeg",
+            "width": 1979,
+            "height": 3452,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "a9742d3927f65985",
+          "src": "/images/collections/aros-collares/aros-collares15-a9742d3927f65985-d934d3c86c.webp",
+          "thumbnail": "/images/collections/aros-collares/aros-collares15-a9742d3927f65985-d934d3c86c-thumb.webp",
+          "originalName": "aros_collares15.jpg",
+          "order": 14,
+          "width": 1255,
+          "height": 2400,
+          "alt": "Aros y collares",
+          "sourceHash": "d934d3c86c14ce421d58935196b6ac35869465feffb1941be6519bcfa6c42cdd",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2178022,
+          "optimizedBytes": 86708,
+          "thumbnailBytes": 15730,
+          "originalMetadata": {
+            "format": "jpeg",
+            "width": 1534,
+            "height": 2934,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "9f2646c3f8f5caed",
+          "src": "/images/collections/aros-collares/aros-collares16-9f2646c3f8f5caed-392c122ec7.webp",
+          "thumbnail": "/images/collections/aros-collares/aros-collares16-9f2646c3f8f5caed-392c122ec7-thumb.webp",
+          "originalName": "aros_collares16.jpg",
+          "order": 15,
+          "width": 1351,
+          "height": 2400,
+          "alt": "Aros y collares",
+          "sourceHash": "392c122ec76eee999e3c1988fdedd7bd6346fd8f4b49978e984bfcbe3e51de53",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2701800,
+          "optimizedBytes": 71138,
+          "thumbnailBytes": 13240,
+          "originalMetadata": {
+            "format": "jpeg",
+            "width": 2296,
+            "height": 4080,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "850c968a5c941e0e",
+          "src": "/images/collections/aros-collares/aros-collares17-850c968a5c941e0e-fcb179f52e.webp",
+          "thumbnail": "/images/collections/aros-collares/aros-collares17-850c968a5c941e0e-fcb179f52e-thumb.webp",
+          "originalName": "aros_collares17.jpg",
+          "order": 16,
+          "width": 1371,
+          "height": 2400,
+          "alt": "Aros y collares",
+          "sourceHash": "fcb179f52eaf8ff9edb35d935173702e19122b91603e098df9edd20bf0fead21",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2292632,
+          "optimizedBytes": 99596,
+          "thumbnailBytes": 19236,
+          "originalMetadata": {
+            "format": "jpeg",
+            "width": 1790,
+            "height": 3133,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "f6707a4ab7c272c0",
+          "src": "/images/collections/aros-collares/aros-collares18-f6707a4ab7c272c0-756c68367e.webp",
+          "thumbnail": "/images/collections/aros-collares/aros-collares18-f6707a4ab7c272c0-756c68367e-thumb.webp",
+          "originalName": "aros_collares18.jpg",
+          "order": 17,
+          "width": 1291,
+          "height": 2400,
+          "alt": "Aros y collares",
+          "sourceHash": "756c68367ef4770fcbb7a2c14946998d085a9f4f2510107bcd6f0652c7530f26",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2396386,
+          "optimizedBytes": 108052,
+          "thumbnailBytes": 19434,
+          "originalMetadata": {
+            "format": "jpeg",
+            "width": 1814,
+            "height": 3372,
+            "orientation": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "obra",
+      "slug": "obra",
+      "name": "Obra",
+      "cover": "5fcf64f2baa45434",
+      "order": 1,
+      "published": true,
+      "images": [
+        {
+          "id": "5fcf64f2baa45434",
+          "src": "/images/collections/obra/obra-2-5fcf64f2baa45434-be864cb568.webp",
+          "thumbnail": "/images/collections/obra/obra-2-5fcf64f2baa45434-be864cb568-thumb.webp",
+          "originalName": "Obra 2.png",
+          "order": 0,
+          "width": 1122,
+          "height": 1402,
+          "alt": "Obra",
+          "sourceHash": "be864cb568f3e5dba806b34ed68828d6f31ae3c12a9143a2481e9de32b719e83",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2769725,
+          "optimizedBytes": 307162,
+          "thumbnailBytes": 89526,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1122,
+            "height": 1402,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "3811c4aba939aa2b",
+          "src": "/images/collections/obra/obra-3-3811c4aba939aa2b-093319fd44.webp",
+          "thumbnail": "/images/collections/obra/obra-3-3811c4aba939aa2b-093319fd44-thumb.webp",
+          "originalName": "Obra 3.png",
+          "order": 1,
+          "width": 1122,
+          "height": 1402,
+          "alt": "Obra",
+          "sourceHash": "093319fd44bdc62319e42b3583a4c4843aecc4558c8d930a687c82f3026e6c88",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2677993,
+          "optimizedBytes": 269402,
+          "thumbnailBytes": 72280,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1122,
+            "height": 1402,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "1c09a039b7c6b104",
+          "src": "/images/collections/obra/obra-4-1c09a039b7c6b104-8ddfda2d5a.webp",
+          "thumbnail": "/images/collections/obra/obra-4-1c09a039b7c6b104-8ddfda2d5a-thumb.webp",
+          "originalName": "Obra 4.jpg",
+          "order": 2,
+          "width": 917,
+          "height": 1305,
+          "alt": "Obra",
+          "sourceHash": "8ddfda2d5a5cbcface4c78e342cd73567017ff924817f5131d05d83f71f702fd",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 135173,
+          "optimizedBytes": 142150,
+          "thumbnailBytes": 62704,
+          "originalMetadata": {
+            "format": "jpeg",
+            "width": 917,
+            "height": 1305,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "1ab9a6e89ade0e79",
+          "src": "/images/collections/obra/obra-5-1ab9a6e89ade0e79-9130a5d84e.webp",
+          "thumbnail": "/images/collections/obra/obra-5-1ab9a6e89ade0e79-9130a5d84e-thumb.webp",
+          "originalName": "Obra 5.png",
+          "order": 3,
+          "width": 1448,
+          "height": 1086,
+          "alt": "Obra",
+          "sourceHash": "9130a5d84e0b8e703859f8de5a459de2aacd302eeb20365ea11c018e605d90aa",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2298629,
+          "optimizedBytes": 163034,
+          "thumbnailBytes": 37766,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1448,
+            "height": 1086,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "76161bd3508a18a6",
+          "src": "/images/collections/obra/obra-6-76161bd3508a18a6-e391d132de.webp",
+          "thumbnail": "/images/collections/obra/obra-6-76161bd3508a18a6-e391d132de-thumb.webp",
+          "originalName": "Obra 6.png",
+          "order": 4,
+          "width": 1122,
+          "height": 1402,
+          "alt": "Obra",
+          "sourceHash": "e391d132deeb2a8668b01003bee5b664fb0ab86fbc856802a386c17808de17ab",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2812182,
+          "optimizedBytes": 324160,
+          "thumbnailBytes": 91282,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1122,
+            "height": 1402,
+            "orientation": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "antaras",
+      "slug": "antaras",
+      "name": "Antaras",
+      "cover": "a2d8cc1ebf56ec93",
+      "order": 2,
+      "published": true,
+      "images": [
+        {
+          "id": "a2d8cc1ebf56ec93",
+          "src": "/images/collections/antaras/antaras1-a2d8cc1ebf56ec93-1298a229ec.webp",
+          "thumbnail": "/images/collections/antaras/antaras1-a2d8cc1ebf56ec93-1298a229ec-thumb.webp",
+          "originalName": "antaras1.png",
+          "order": 0,
+          "width": 1024,
+          "height": 1536,
+          "alt": "Antaras",
+          "sourceHash": "1298a229ecd4fbf0b8a0ac17c92c80a4aa6d1459700590990e6d258f2e8fbfac",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2114272,
+          "optimizedBytes": 149718,
+          "thumbnailBytes": 36110,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1024,
+            "height": 1536,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "b784d5d635946176",
+          "src": "/images/collections/antaras/antaras2-b784d5d635946176-78cd2db9a2.webp",
+          "thumbnail": "/images/collections/antaras/antaras2-b784d5d635946176-78cd2db9a2-thumb.webp",
+          "originalName": "antaras2.png",
+          "order": 1,
+          "width": 1024,
+          "height": 1536,
+          "alt": "Antaras",
+          "sourceHash": "78cd2db9a27fb90c8055bab17cfdc26059021d11b508f0a0b675a6af38160c8b",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2761325,
+          "optimizedBytes": 301722,
+          "thumbnailBytes": 61322,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1024,
+            "height": 1536,
+            "orientation": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "bocadeloca",
+      "slug": "bocadeloca",
+      "name": "Boca de loca",
+      "cover": "36425560110adf9d",
+      "order": 2,
+      "published": true,
+      "images": [
+        {
+          "id": "36425560110adf9d",
+          "src": "/images/collections/bocadeloca/bocadeloca-36425560110adf9d-65f77562b3.webp",
+          "thumbnail": "/images/collections/bocadeloca/bocadeloca-36425560110adf9d-65f77562b3-thumb.webp",
+          "originalName": "bocadeloca.png",
+          "order": 0,
+          "width": 1024,
+          "height": 1536,
+          "alt": "Boca de loca",
+          "sourceHash": "65f77562b332d53c6f31a0cb50d436dda857ddbd49ec5eb9cad4b415fe8fd8b4",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2064904,
+          "optimizedBytes": 130298,
+          "thumbnailBytes": 26920,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1024,
+            "height": 1536,
+            "orientation": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "figura",
+      "slug": "figura",
+      "name": "Figura",
+      "cover": "3a04d3cce67b4c17",
+      "order": 3,
+      "published": true,
+      "images": [
+        {
+          "id": "1b93791c3a5d929e",
+          "src": "/images/collections/figura/figura1-1b93791c3a5d929e-083e485172.webp",
+          "thumbnail": "/images/collections/figura/figura1-1b93791c3a5d929e-083e485172-thumb.webp",
+          "originalName": "figura1.png",
+          "order": 0,
+          "width": 1024,
+          "height": 1536,
+          "alt": "Figura",
+          "sourceHash": "083e48517203b403d5ef57f502abd7a659d44339442afbe7c6cdeb80c746feee",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2088630,
+          "optimizedBytes": 138284,
+          "thumbnailBytes": 27670,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1024,
+            "height": 1536,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "f96620db7170f67d",
+          "src": "/images/collections/figura/figura2-f96620db7170f67d-083e485172.webp",
+          "thumbnail": "/images/collections/figura/figura2-f96620db7170f67d-083e485172-thumb.webp",
+          "originalName": "figura2.png",
+          "order": 1,
+          "width": 1024,
+          "height": 1536,
+          "alt": "Figura",
+          "sourceHash": "083e48517203b403d5ef57f502abd7a659d44339442afbe7c6cdeb80c746feee",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2088630,
+          "optimizedBytes": 138284,
+          "thumbnailBytes": 27670,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1024,
+            "height": 1536,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "3a04d3cce67b4c17",
+          "src": "/images/collections/figura/figura3-3a04d3cce67b4c17-67a1146e16.webp",
+          "thumbnail": "/images/collections/figura/figura3-3a04d3cce67b4c17-67a1146e16-thumb.webp",
+          "originalName": "figura3.png",
+          "order": 2,
+          "width": 1024,
+          "height": 1536,
+          "alt": "Figura",
+          "sourceHash": "67a1146e166bfa4af56b77156176a6e9bfcda94b560732a5b47301b8f1f4ef38",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2520077,
+          "optimizedBytes": 204934,
+          "thumbnailBytes": 41100,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1024,
+            "height": 1536,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "3a8e560e27b43dd8",
+          "src": "/images/collections/figura/figura4-3a8e560e27b43dd8-d142757ba8.webp",
+          "thumbnail": "/images/collections/figura/figura4-3a8e560e27b43dd8-d142757ba8-thumb.webp",
+          "originalName": "figura4.png",
+          "order": 3,
+          "width": 1024,
+          "height": 1536,
+          "alt": "Figura",
+          "sourceHash": "d142757ba874df7290011c3651317b26ab408cd185b26eb6df822d77736752f6",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2182858,
+          "optimizedBytes": 135398,
+          "thumbnailBytes": 32244,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1024,
+            "height": 1536,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "98761e6838951fca",
+          "src": "/images/collections/figura/figura5-98761e6838951fca-5001bd72c5.webp",
+          "thumbnail": "/images/collections/figura/figura5-98761e6838951fca-5001bd72c5-thumb.webp",
+          "originalName": "figura5.png",
+          "order": 4,
+          "width": 1024,
+          "height": 1536,
+          "alt": "Figura",
+          "sourceHash": "5001bd72c58d9e2777f210d3744b196bbe0aaffbfbb2796199a66fffc64a8d17",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2116602,
+          "optimizedBytes": 136652,
+          "thumbnailBytes": 29522,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1024,
+            "height": 1536,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "fd3eb54d28c270ad",
+          "src": "/images/collections/figura/figura6-fd3eb54d28c270ad-474b51e717.webp",
+          "thumbnail": "/images/collections/figura/figura6-fd3eb54d28c270ad-474b51e717-thumb.webp",
+          "originalName": "figura6.png",
+          "order": 5,
+          "width": 2172,
+          "height": 724,
+          "alt": "Figura",
+          "sourceHash": "474b51e7170b7ad8c6cdca18b6551c107468f55ad4dfb740521b3f73fe809914",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2074885,
+          "optimizedBytes": 202480,
+          "thumbnailBytes": 27334,
+          "originalMetadata": {
+            "format": "png",
+            "width": 2172,
+            "height": 724,
+            "orientation": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "copas",
+      "slug": "copas",
+      "name": "Copas",
+      "cover": "98ed0ed05de2bc83",
+      "order": 4,
+      "published": true,
+      "images": [
+        {
+          "id": "98ed0ed05de2bc83",
+          "src": "/images/collections/copas/copas1-98ed0ed05de2bc83-39cb73cd80.webp",
+          "thumbnail": "/images/collections/copas/copas1-98ed0ed05de2bc83-39cb73cd80-thumb.webp",
+          "originalName": "Copas1.png",
+          "order": 0,
+          "width": 1448,
+          "height": 1086,
+          "alt": "Copas",
+          "sourceHash": "39cb73cd80bc67d131647d60f23622867ed92c18b35abff584ae95c9ed5d94aa",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2180884,
+          "optimizedBytes": 174102,
+          "thumbnailBytes": 57708,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1448,
+            "height": 1086,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "a69095df38b43b49",
+          "src": "/images/collections/copas/copas2-a69095df38b43b49-7f80235c71.webp",
+          "thumbnail": "/images/collections/copas/copas2-a69095df38b43b49-7f80235c71-thumb.webp",
+          "originalName": "Copas2.png",
+          "order": 1,
+          "width": 1448,
+          "height": 1086,
+          "alt": "Copas",
+          "sourceHash": "7f80235c713de57a1638ed9334c5741ff8c70619d39df14b297ebbbd7e667d26",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2240644,
+          "optimizedBytes": 187226,
+          "thumbnailBytes": 59814,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1448,
+            "height": 1086,
+            "orientation": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "derbake",
+      "slug": "derbake",
+      "name": "Derbake",
+      "cover": "28b297738a01ceed",
+      "order": 4,
+      "published": true,
+      "images": [
+        {
+          "id": "28b297738a01ceed",
+          "src": "/images/collections/derbake/derbake2-28b297738a01ceed-d3486af9a9.webp",
+          "thumbnail": "/images/collections/derbake/derbake2-28b297738a01ceed-d3486af9a9-thumb.webp",
+          "originalName": "derbake2.png",
+          "order": 0,
+          "width": 1024,
+          "height": 1536,
+          "alt": "Derbake",
+          "sourceHash": "d3486af9a929469fd5e0c20b70f9e00dea5c5798890d69728bcea2695a74ae15",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2010276,
+          "optimizedBytes": 101898,
+          "thumbnailBytes": 25600,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1024,
+            "height": 1536,
+            "orientation": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "pinchuda",
+      "slug": "pinchuda",
+      "name": "Pinchuda",
+      "cover": "57b06078c5875e06",
+      "order": 5,
+      "published": true,
+      "images": [
+        {
+          "id": "57b06078c5875e06",
+          "src": "/images/collections/pinchuda/pinchuda1-57b06078c5875e06-bd2aa73a66.webp",
+          "thumbnail": "/images/collections/pinchuda/pinchuda1-57b06078c5875e06-bd2aa73a66-thumb.webp",
+          "originalName": "pinchuda1.png",
+          "order": 0,
+          "width": 1024,
+          "height": 1536,
+          "alt": "Pinchuda",
+          "sourceHash": "bd2aa73a6670b5009434a51f8657e50524aee0c45fd4d59503a448cb6c53d820",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2036457,
+          "optimizedBytes": 121878,
+          "thumbnailBytes": 25808,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1024,
+            "height": 1536,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "8369a57d74ba6b80",
+          "src": "/images/collections/pichuda/pichuda2-8369a57d74ba6b80-4df1da7f47.webp",
+          "thumbnail": "/images/collections/pichuda/pichuda2-8369a57d74ba6b80-4df1da7f47-thumb.webp",
+          "originalName": "pichuda2.png",
+          "order": 1,
+          "width": 1024,
+          "height": 1536,
+          "alt": "Pinchuda",
+          "sourceHash": "4df1da7f47d52fdf4dfe478f96d28a0b64df646b79920be2a71f0fb382348f4d",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2097174,
+          "optimizedBytes": 122916,
+          "thumbnailBytes": 26536,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1024,
+            "height": 1536,
+            "orientation": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "hurna",
+      "slug": "hurna",
+      "name": "Hurna",
+      "cover": "5c5dc350479b7344",
+      "order": 6,
+      "published": true,
+      "images": [
+        {
+          "id": "5c5dc350479b7344",
+          "src": "/images/collections/hurna/hurna-5c5dc350479b7344-2f28406b2d.webp",
+          "thumbnail": "/images/collections/hurna/hurna-5c5dc350479b7344-2f28406b2d-thumb.webp",
+          "originalName": "hurna.png",
+          "order": 0,
+          "width": 1024,
+          "height": 1536,
+          "alt": "Hurna",
+          "sourceHash": "2f28406b2dadc69ff5a7c5a50d1c829c01297cb59de552d97367cf546c52a1d7",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2057546,
+          "optimizedBytes": 132368,
+          "thumbnailBytes": 36636,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1024,
+            "height": 1536,
+            "orientation": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "vasijasilvadora-peluca",
+      "slug": "vasijasilvadora-peluca",
+      "name": "Vasija silvadora peluca",
+      "cover": "b6cbf5f649ab6586",
+      "order": 6,
+      "published": true,
+      "images": [
+        {
+          "id": "b6cbf5f649ab6586",
+          "src": "/images/collections/vasijasilvadora-peluca/vasijasilvadora-peluca1-b6cbf5f649ab6586-a20379a887.webp",
+          "thumbnail": "/images/collections/vasijasilvadora-peluca/vasijasilvadora-peluca1-b6cbf5f649ab6586-a20379a887-thumb.webp",
+          "originalName": "vasijasilvadora_peluca1.png",
+          "order": 0,
+          "width": 1024,
+          "height": 1536,
+          "alt": "Vasija silvadora peluca",
+          "sourceHash": "a20379a88754489cb3721a86614fb62430d782f84cb826306a64f4fca95587df",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2202446,
+          "optimizedBytes": 157874,
+          "thumbnailBytes": 48730,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1024,
+            "height": 1536,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "e6c31cabc3ea77a7",
+          "src": "/images/collections/vasijasilvadora-peluca/vasijasilvadora-peluca3-e6c31cabc3ea77a7-2605675eb5.webp",
+          "thumbnail": "/images/collections/vasijasilvadora-peluca/vasijasilvadora-peluca3-e6c31cabc3ea77a7-2605675eb5-thumb.webp",
+          "originalName": "vasijasilvadora_peluca3.png",
+          "order": 1,
+          "width": 1024,
+          "height": 1536,
+          "alt": "Vasija silvadora peluca",
+          "sourceHash": "2605675eb5d9a683b4d3a3444ce3d21aaa840ab22f9be3e0c43f4e6a674e8329",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2157590,
+          "optimizedBytes": 151248,
+          "thumbnailBytes": 45204,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1024,
+            "height": 1536,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "416de53f5759f7e4",
+          "src": "/images/collections/vasijasilvadora-peluca/vasijasilvadora-peluca4-416de53f5759f7e4-22cebcebb8.webp",
+          "thumbnail": "/images/collections/vasijasilvadora-peluca/vasijasilvadora-peluca4-416de53f5759f7e4-22cebcebb8-thumb.webp",
+          "originalName": "vasijasilvadora_peluca4.png",
+          "order": 2,
+          "width": 1024,
+          "height": 1536,
+          "alt": "Vasija silvadora peluca",
+          "sourceHash": "22cebcebb8e724e227403e058c58d2926fcc644e84f4a81578b4a717ccecd2f9",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2279375,
+          "optimizedBytes": 169876,
+          "thumbnailBytes": 49992,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1024,
+            "height": 1536,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "5775417d49fe7dba",
+          "src": "/images/collections/vasijasilvadora-peluca/vasijasilvadora-peluca5-5775417d49fe7dba-bd418204cb.webp",
+          "thumbnail": "/images/collections/vasijasilvadora-peluca/vasijasilvadora-peluca5-5775417d49fe7dba-bd418204cb-thumb.webp",
+          "originalName": "vasijasilvadora_peluca5.png",
+          "order": 3,
+          "width": 1024,
+          "height": 1536,
+          "alt": "Vasija silvadora peluca",
+          "sourceHash": "bd418204cbbe68b1cb8986b72f50b6e492372f8f9fc9b8137baa2b61c6d82279",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2325485,
+          "optimizedBytes": 182214,
+          "thumbnailBytes": 51944,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1024,
+            "height": 1536,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "6dd552810db51413",
+          "src": "/images/collections/vasijasilvadora-peluca/vasijasilvadora-peluca6-6dd552810db51413-d318458ef8.webp",
+          "thumbnail": "/images/collections/vasijasilvadora-peluca/vasijasilvadora-peluca6-6dd552810db51413-d318458ef8-thumb.webp",
+          "originalName": "vasijasilvadora_peluca6.png",
+          "order": 4,
+          "width": 1024,
+          "height": 1536,
+          "alt": "Vasija silvadora peluca",
+          "sourceHash": "d318458ef8aa7afe12cf9ec9da2271b8070796dea6018c35121f8058041ec402",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2257478,
+          "optimizedBytes": 177848,
+          "thumbnailBytes": 50196,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1024,
+            "height": 1536,
+            "orientation": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "mascara",
+      "slug": "mascara",
+      "name": "Máscara",
+      "cover": "37434dbb9b15b76e",
+      "order": 7,
+      "published": true,
+      "images": [
+        {
+          "id": "37434dbb9b15b76e",
+          "src": "/images/collections/mascara/mascara-37434dbb9b15b76e-5a5f641ec2.webp",
+          "thumbnail": "/images/collections/mascara/mascara-37434dbb9b15b76e-5a5f641ec2-thumb.webp",
+          "originalName": "mascara.png",
+          "order": 0,
+          "width": 1024,
+          "height": 1536,
+          "alt": "Máscara",
+          "sourceHash": "5a5f641ec2fad09d228ff58216a23f9ad65c6bda70a89058352b64533750a235",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 1925821,
+          "optimizedBytes": 66724,
+          "thumbnailBytes": 17390,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1024,
+            "height": 1536,
+            "orientation": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "tambor",
+      "slug": "tambor",
+      "name": "Tambor",
+      "cover": "6983e2b7614bc0c8",
+      "order": 11,
+      "published": true,
+      "images": [
+        {
+          "id": "6983e2b7614bc0c8",
+          "src": "/images/collections/tambor/tambor-1-6983e2b7614bc0c8-912ec93f6b.webp",
+          "thumbnail": "/images/collections/tambor/tambor-1-6983e2b7614bc0c8-912ec93f6b-thumb.webp",
+          "originalName": "Tambor 1.png",
+          "order": 0,
+          "width": 1122,
+          "height": 1402,
+          "alt": "Tambor",
+          "sourceHash": "912ec93f6b3b2233a9b56e7ebf958775c32709650ff7afbcbad69dd6ff49111b",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 3052923,
+          "optimizedBytes": 362772,
+          "thumbnailBytes": 104176,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1122,
+            "height": 1402,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "71a7a12d71ca42a9",
+          "src": "/images/collections/tambor/tambor-3-71a7a12d71ca42a9-e3e35e456a.webp",
+          "thumbnail": "/images/collections/tambor/tambor-3-71a7a12d71ca42a9-e3e35e456a-thumb.webp",
+          "originalName": "Tambor 3.png",
+          "order": 1,
+          "width": 1254,
+          "height": 1254,
+          "alt": "Tambor",
+          "sourceHash": "e3e35e456a588756c340bfa9cbc01725f43db09f5d21f7b39ba39deac64ba5bd",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 3007879,
+          "optimizedBytes": 344980,
+          "thumbnailBytes": 122674,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1254,
+            "height": 1254,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "abd006278ffb00e5",
+          "src": "/images/collections/tambor/tambor-4-abd006278ffb00e5-0b7b6a4040.webp",
+          "thumbnail": "/images/collections/tambor/tambor-4-abd006278ffb00e5-0b7b6a4040-thumb.webp",
+          "originalName": "Tambor 4.png",
+          "order": 2,
+          "width": 1448,
+          "height": 1086,
+          "alt": "Tambor",
+          "sourceHash": "0b7b6a4040b2af5aeff6bd906cdc08b5ac4f4be1715fbdf1aec469d19653a3cb",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2411397,
+          "optimizedBytes": 203486,
+          "thumbnailBytes": 54060,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1448,
+            "height": 1086,
+            "orientation": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "taza-biblioteca",
+      "slug": "taza-biblioteca",
+      "name": "Taza biblioteca",
+      "cover": "fee17cfb2b7edef3",
+      "order": 12,
+      "published": true,
+      "images": [
+        {
+          "id": "fee17cfb2b7edef3",
+          "src": "/images/collections/taza-biblioteca/taza-biblioteca-1-fee17cfb2b7edef3-9bd1e19d3a.webp",
+          "thumbnail": "/images/collections/taza-biblioteca/taza-biblioteca-1-fee17cfb2b7edef3-9bd1e19d3a-thumb.webp",
+          "originalName": "Taza biblioteca 1.png",
+          "order": 0,
+          "width": 874,
+          "height": 868,
+          "alt": "Taza biblioteca",
+          "sourceHash": "9bd1e19d3a504198f73492f5ff2ad2c48079c8e402c24b5bf3723175a51e80c4",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2008247,
+          "optimizedBytes": 153106,
+          "thumbnailBytes": 120932,
+          "originalMetadata": {
+            "format": "png",
+            "width": 874,
+            "height": 868,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "909c770956ec9cea",
+          "src": "/images/collections/taza-biblioteca/taza-biblioteca-2-909c770956ec9cea-4c15358be4.webp",
+          "thumbnail": "/images/collections/taza-biblioteca/taza-biblioteca-2-909c770956ec9cea-4c15358be4-thumb.webp",
+          "originalName": "Taza biblioteca 2.png",
+          "order": 1,
+          "width": 1086,
+          "height": 1448,
+          "alt": "Taza biblioteca",
+          "sourceHash": "4c15358be4aea156ea3c1603806cc16ce905ebceb99ecd02d5477bdad9c1871d",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2304798,
+          "optimizedBytes": 206160,
+          "thumbnailBytes": 68918,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1086,
+            "height": 1448,
+            "orientation": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "vasija-silvadora",
+      "slug": "vasija-silvadora",
+      "name": "Vasija silvadora",
+      "cover": "efe1ec62a1e5a854",
+      "order": 13,
+      "published": true,
+      "images": [
+        {
+          "id": "efe1ec62a1e5a854",
+          "src": "/images/collections/vasija-silvadora/vasija-silvadora-1-efe1ec62a1e5a854-8ddfda2d5a.webp",
+          "thumbnail": "/images/collections/vasija-silvadora/vasija-silvadora-1-efe1ec62a1e5a854-8ddfda2d5a-thumb.webp",
+          "originalName": "Vasija silvadora 1.jpg",
+          "order": 0,
+          "width": 917,
+          "height": 1305,
+          "alt": "Vasija silvadora",
+          "sourceHash": "8ddfda2d5a5cbcface4c78e342cd73567017ff924817f5131d05d83f71f702fd",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 135173,
+          "optimizedBytes": 142150,
+          "thumbnailBytes": 62704,
+          "originalMetadata": {
+            "format": "jpeg",
+            "width": 917,
+            "height": 1305,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "56dc00a2b7d831be",
+          "src": "/images/collections/vasija-silvadora/vasija-silvadora-2-56dc00a2b7d831be-cd533b2f48.webp",
+          "thumbnail": "/images/collections/vasija-silvadora/vasija-silvadora-2-56dc00a2b7d831be-cd533b2f48-thumb.webp",
+          "originalName": "Vasija silvadora 2.jpg",
+          "order": 1,
+          "width": 720,
+          "height": 1600,
+          "alt": "Vasija silvadora",
+          "sourceHash": "cd533b2f4899381f6495505dd237d657985dd48fdb62ac1d9bdd414d1d898191",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 117441,
+          "optimizedBytes": 114190,
+          "thumbnailBytes": 41782,
+          "originalMetadata": {
+            "format": "jpeg",
+            "width": 720,
+            "height": 1600,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "47fc309166b9aa59",
+          "src": "/images/collections/vasija-silvadora/vasija-silvadora-3-47fc309166b9aa59-e28eecf7a8.webp",
+          "thumbnail": "/images/collections/vasija-silvadora/vasija-silvadora-3-47fc309166b9aa59-e28eecf7a8-thumb.webp",
+          "originalName": "Vasija silvadora 3.jpeg",
+          "order": 2,
+          "width": 1080,
+          "height": 1080,
+          "alt": "Vasija silvadora",
+          "sourceHash": "e28eecf7a8478f9c0bc7cb9a57f9d303c11b588848f81afb8274b94d285af2dc",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 120361,
+          "optimizedBytes": 119722,
+          "thumbnailBytes": 74608,
+          "originalMetadata": {
+            "format": "jpeg",
+            "width": 1080,
+            "height": 1080,
+            "orientation": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "vasijasilvadora-picolargo",
+      "slug": "vasijasilvadora-picolargo",
+      "name": "Vasija silvadora picolargo",
+      "cover": "dc15f778702c9535",
+      "order": 15,
+      "published": true,
+      "images": [
+        {
+          "id": "dc15f778702c9535",
+          "src": "/images/collections/vasijasilvadora-picolargo/vasijasilvadora-picolargo-dc15f778702c9535-692076d77f.webp",
+          "thumbnail": "/images/collections/vasijasilvadora-picolargo/vasijasilvadora-picolargo-dc15f778702c9535-692076d77f-thumb.webp",
+          "originalName": "vasijasilvadora_picolargo.png",
+          "order": 0,
+          "width": 1024,
+          "height": 1536,
+          "alt": "Vasija silvadora picolargo",
+          "sourceHash": "692076d77f47d50364de91d73ff9cf04e37278e7494c79249423c6287fc5e2ca",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2177368,
+          "optimizedBytes": 139552,
+          "thumbnailBytes": 35520,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1024,
+            "height": 1536,
+            "orientation": 1
+          }
+        },
+        {
+          "id": "2c6de99ec7ad4901",
+          "src": "/images/collections/vasijasilvadora-picolargo/vasijasilvadora-picolargo2-2c6de99ec7ad4901-e95264746f.webp",
+          "thumbnail": "/images/collections/vasijasilvadora-picolargo/vasijasilvadora-picolargo2-2c6de99ec7ad4901-e95264746f-thumb.webp",
+          "originalName": "vasijasilvadora_picolargo2.png",
+          "order": 1,
+          "width": 1024,
+          "height": 1536,
+          "alt": "Vasija silvadora picolargo",
+          "sourceHash": "e95264746f02017841831fb75f4bdc70287c077587765e542ff9015309e62951",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 2145772,
+          "optimizedBytes": 138500,
+          "thumbnailBytes": 37754,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1024,
+            "height": 1536,
+            "orientation": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "venus-silbato",
+      "slug": "venus-silbato",
+      "name": "Venus silbato",
+      "cover": "13f6d35396fb2f08",
+      "order": 16,
+      "published": true,
+      "images": [
+        {
+          "id": "13f6d35396fb2f08",
+          "src": "/images/collections/venus-silbato/venus-silbato-13f6d35396fb2f08-bb05232169.webp",
+          "thumbnail": "/images/collections/venus-silbato/venus-silbato-13f6d35396fb2f08-bb05232169-thumb.webp",
+          "originalName": "venus_silbato.png",
+          "order": 0,
+          "width": 1024,
+          "height": 1536,
+          "alt": "Venus silbato",
+          "sourceHash": "bb0523216998558e8b9d72288ec75b9083f1ebc5175cc57c2aa8b33ec802260c",
+          "recipe": "webp-q88-2400-thumb720-auto-orient-srgb-v1",
+          "originalBytes": 1997222,
+          "optimizedBytes": 117226,
+          "thumbnailBytes": 26784,
+          "originalMetadata": {
+            "format": "png",
+            "width": 1024,
+            "height": 1536,
+            "orientation": 1
+          }
+        }
+      ]
+    }
+  ]
+}

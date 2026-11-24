@@ -28,7 +28,7 @@ export function routeMetadata(path: string, locale: Locale): Metadata {
   if (path === "/contacto") { title = t("Contacto"); description = t("Contacta a Yanina Cardozo por piezas unicas de ceramica artesanal, talleres online, envios y consultas por WhatsApp o Instagram."); }
   if (path === "/checkout") { title = t("Resumen de compra"); description = t("Resumen de compra de Yanina Cardozo. Checkout online proximamente y consultas por WhatsApp para piezas unicas de ceramica artesanal."); }
   const [section, slug] = path.slice(1).split("/");
-  if (slug && section === "tienda") { const product = getProductBySlug(slug, locale); if (product) { title = product.name; description = product.description; } }
+  if (slug && section === "tienda") { const product = getProductBySlug(slug, locale); if (product) { title = product.name; description = product.description || description; } }
   if (slug && section === "talleres") { const workshop = getWorkshopBySlug(slug, locale); if (workshop) { title = workshop.title; description = workshop.description; } }
   if (slug && section === "experiencias") { const experience = getExperienceBySlug(slug, locale); if (experience) title = `${experience.title} · ${t("Experiencias de cerámica en Salta")}`; }
   if (!publicPaths.includes(path)) { title = t("Página no encontrada"); description = t("No encontramos esta página. Podés volver al inicio y seguir explorando."); }

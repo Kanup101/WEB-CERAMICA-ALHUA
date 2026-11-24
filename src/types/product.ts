@@ -12,11 +12,10 @@ export type Product = {
   category: ProductCategory;
   description: string;
   poeticDescription: string;
-  priceARS: number;
-  priceUSD?: number;
+  priceUSD: number | null;
   images: string[];
   featured: boolean;
-  stock: number;
+  stock: number | null;
   isUniquePiece: boolean;
   materials: string[];
   dimensions: string;

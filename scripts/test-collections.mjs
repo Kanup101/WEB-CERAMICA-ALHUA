@@ -10,14 +10,15 @@ assert.equal(identify('AROS_collares10.JPEG').slug, 'aros-collares');
 assert.equal(identify('aros collares2.png').numbers[0], 2);
 assert.equal(identify('Obra 2_editada.webp').edited, true);
 assert.notEqual(identify('pichuda2.png').slug, identify('pinchuda1.png').slug);
-assert.equal(collectionGroup(identify('pichuda2.png').slug), 'pinchuda');
+assert.equal(collectionGroup(identify('pichuda2.png').slug), 'el-beso');
 const manifest = JSON.parse(await fs.readFile('src/data/collections-manifest.json', 'utf8'));
 const names = new Set(), targets = new Set(), inventory = [];
-assert.equal(manifest.collections.length, 17);
-assert.equal(manifest.collections.filter(collection => collection.published).length, 16);
-assert.ok(!manifest.collections.some(collection => collection.slug === 'pichuda'));
-const pinchuda = manifest.collections.find(collection => collection.slug === 'pinchuda');
-assert.deepEqual(pinchuda.images.map(image => image.originalName), ['pinchuda1.png', 'pichuda2.png']);
+assert.equal(manifest.collections.length, 15);
+assert.equal(manifest.collections.filter(collection => collection.published).length, 14);
+assert.ok(!manifest.collections.some(collection => ['bocadeloca', 'pinchuda', 'pichuda', 'obra'].includes(collection.slug)));
+const kiss = manifest.collections.find(collection => collection.slug === 'el-beso');
+assert.deepEqual(kiss.images.map(image => image.originalName), ['bocadeloca.png', 'pinchuda1.png', 'pichuda2.png']);
+assert.equal(new Set(kiss.images.map(image => image.sourceHash)).size, kiss.images.length);
 assert.equal(manifest.collections.find(collection => collection.slug === 'aros-collares').published, false);
 for (const collection of manifest.collections) {
   assert.ok(collection.images.some(image => image.id === collection.cover));
@@ -38,7 +39,13 @@ for (const collection of manifest.collections) {
     }
   }
 }
-assert.equal(names.size, manifest.found);
+const excluded = (await fs.readdir('public/colecciones')).filter(name => identify(name).slug === 'obra');
+assert.equal(excluded.length, 5);
+assert.equal(names.size + excluded.length, manifest.found);
+assert.ok(excluded.every(name => !names.has(name)));
+const duplicate = await fs.readFile('public/colecciones/Obra 4.jpg');
+const retained = manifest.collections.find(collection => collection.slug === 'soplo-al-sol').images.find(image => image.originalName === 'Vasija silvadora 1.jpg');
+assert.equal(createHash('sha256').update(duplicate).digest('hex'), retained.sourceHash);
 const aros = manifest.collections.find(c => c.slug === 'aros-collares');
 assert.ok(aros.images.findIndex(i => i.originalName === 'aros_collares2.jpg') < aros.images.findIndex(i => i.originalName === 'aros_collares10.jpg'));
 console.log(`PASS: grouping, numeric order, ${names.size} source hashes, ${targets.size} decoded WebP files, no collisions, aspect ratios and no upscaling.`);

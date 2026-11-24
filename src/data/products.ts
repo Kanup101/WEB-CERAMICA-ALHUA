@@ -1,29 +1,20 @@
-import type { Product, ProductCategory } from "@/types/product";
+import type { Product } from "@/types/product";
 import type { Locale } from "@/lib/i18n/config";
 import { getTranslator, type MessageKey } from "@/lib/i18n/messages";
 
 type ProductContent = { description: MessageKey; poeticDescription: MessageKey; materials: MessageKey[]; dimensions: MessageKey; technique: MessageKey; careInstructions: MessageKey[] };
-type ProductRecord = Omit<Product, keyof ProductContent> & { content: ProductContent };
-export const productCategories: ProductCategory[] = [
-  "Tazas",
-  "Cuencos",
-  "Platos",
-  "Objetos decorativos",
-  "Piezas únicas"
-];
+type ProductRecord = Omit<Product, keyof ProductContent> & { artworkId: string; content?: ProductContent };
+
 export const productRecords: ProductRecord[] = [
   {
     "id": "p-001",
     "slug": "taza-biblioteca",
     "name": "Taza Biblioteca",
     "category": "Tazas",
-    "priceARS": 32500,
-    "priceUSD": 36,
     "images": [
       "/images/products/taza-biblioteca-1.webp"
     ],
     "featured": true,
-    "stock": 5,
     "isUniquePiece": false,
     "content": {
       "description": "Taza de gres torneada a mano, con esmalte calido y una silueta comoda para uso diario.",
@@ -40,50 +31,20 @@ export const productRecords: ProductRecord[] = [
         "Apta microondas en usos breves",
         "Evitar golpes termicos"
       ]
-    }
-  },
-  {
-    "id": "p-002",
-    "slug": "luminaria-corteza",
-    "name": "Luminaria Corteza",
-    "category": "Objetos decorativos",
-    "priceARS": 56000,
-    "priceUSD": 62,
-    "images": [
-      "/images/products/obra-2.webp"
-    ],
-    "featured": true,
-    "stock": 1,
-    "isUniquePiece": true,
-    "content": {
-      "description": "Objeto calado de arcilla roja con textura vertical, pensado para luz suave o composicion decorativa.",
-      "poeticDescription": "La luz atraviesa sus aberturas y revela una superficie tactil, cercana a corteza, tierra y sombra.",
-      "materials": [
-        "Arcilla roja",
-        "Engobe natural",
-        "Terminacion mate"
-      ],
-      "dimensions": "18 cm alto x 13 cm diametro aproximado.",
-      "technique": "Modelado manual, calado y textura aplicada pieza por pieza.",
-      "careInstructions": [
-        "Usar con luz led o vela contenida",
-        "Limpiar con pano seco",
-        "No exponer a humedad permanente"
-      ]
-    }
+    },
+    "artworkId": "taza-biblioteca",
+    "priceUSD": null,
+    "stock": null
   },
   {
     "id": "p-003",
     "slug": "luminaria-geometria",
-    "name": "Luminaria Geometria",
+    "name": "Luminaria Geométrica",
     "category": "Objetos decorativos",
-    "priceARS": 59000,
-    "priceUSD": 66,
     "images": [
       "/images/products/obra-3.webp"
     ],
     "featured": false,
-    "stock": 1,
     "isUniquePiece": true,
     "content": {
       "description": "Pieza calada con detalles geometricos pintados a mano en tonos claros y verdes suaves.",
@@ -100,22 +61,22 @@ export const productRecords: ProductRecord[] = [
         "Usar solo con luz fria o contenedor interno",
         "Evitar golpes"
       ]
-    }
+    },
+    "artworkId": "luminaria-geometrica",
+    "priceUSD": 105,
+    "stock": 1
   },
   {
     "id": "p-004",
     "slug": "vasija-puntas",
     "name": "Vasija Puntas",
     "category": "Objetos decorativos",
-    "priceARS": 72000,
-    "priceUSD": 80,
     "images": [
       "/images/products/vasija-puntas-1.webp",
       "/images/products/vasija-puntas-2.webp",
       "/images/products/vasija-puntas-3.webp"
     ],
     "featured": true,
-    "stock": 1,
     "isUniquePiece": true,
     "content": {
       "description": "Vasija escultorica de pequeno formato, con volumen organico y terminacion de caracter mineral.",
@@ -132,22 +93,22 @@ export const productRecords: ProductRecord[] = [
         "Limpiar con pano seco",
         "No sumergir en agua"
       ]
-    }
+    },
+    "artworkId": "vasija-puntas",
+    "priceUSD": 300,
+    "stock": 0
   },
   {
     "id": "p-005",
-    "slug": "vasija-silvadora",
-    "name": "Vasija Silvadora",
+    "slug": "soplo-al-sol",
+    "name": "Soplo al sol",
     "category": "Piezas únicas",
-    "priceARS": 98000,
-    "priceUSD": 108,
     "images": [
       "/images/products/vasija-silvadora-1.webp",
       "/images/products/vasija-silvadora-2.webp",
       "/images/products/vasija-silvadora-3.webp"
     ],
     "featured": true,
-    "stock": 1,
     "isUniquePiece": true,
     "content": {
       "description": "Pieza unica inspirada en formas ancestrales, con cuerpo compacto y presencia ceremonial.",
@@ -164,22 +125,22 @@ export const productRecords: ProductRecord[] = [
         "Manipular con ambas manos",
         "Evitar humedad permanente"
       ]
-    }
+    },
+    "artworkId": "soplo-al-sol",
+    "priceUSD": 150,
+    "stock": 1
   },
   {
     "id": "p-006",
     "slug": "fuente-venas",
     "name": "Fuente Venas",
     "category": "Platos",
-    "priceARS": 64000,
-    "priceUSD": 71,
     "images": [
       "/images/products/venas-1.webp",
       "/images/products/venas-2.webp",
       "/images/products/venas-3.webp"
     ],
     "featured": false,
-    "stock": 2,
     "isUniquePiece": false,
     "content": {
       "description": "Fuente artesanal de borde libre, con marcas minerales que recorren la superficie como un dibujo natural.",
@@ -196,15 +157,16 @@ export const productRecords: ProductRecord[] = [
         "Lavar a mano para preservar la superficie",
         "No apilar con peso"
       ]
-    }
+    },
+    "artworkId": "fuente-venas",
+    "priceUSD": 250,
+    "stock": 2
   },
   {
     "id": "p-007",
     "slug": "tambor-ceremonial",
-    "name": "Tambor Ceremonial",
+    "name": "Tambor ceremonial",
     "category": "Objetos decorativos",
-    "priceARS": 86000,
-    "priceUSD": 95,
     "images": [
       "/images/products/obra-1.webp",
       "/images/products/obra-11.webp",
@@ -213,7 +175,6 @@ export const productRecords: ProductRecord[] = [
       "/images/products/tambor-3.webp"
     ],
     "featured": true,
-    "stock": 1,
     "isUniquePiece": true,
     "content": {
       "description": "Pieza tipo tambor con cuero tensado, cordones negros y grabados manuales sobre arcilla.",
@@ -231,106 +192,46 @@ export const productRecords: ProductRecord[] = [
         "Limpiar con pano seco",
         "Evitar humedad y sol directo"
       ]
-    }
+    },
+    "artworkId": "tambor-ceremonial",
+    "priceUSD": 145,
+    "stock": 1
   },
   {
-    "id": "p-008",
-    "slug": "figura-flautista",
-    "name": "Figura Flautista",
-    "category": "Piezas únicas",
-    "priceARS": 92000,
-    "priceUSD": 102,
+    "id": "p-011",
+    "slug": "derbake",
+    "name": "Derbake",
+    "artworkId": "derbake",
+    "category": "Objetos decorativos",
+    "priceUSD": 250,
+    "stock": null,
     "images": [
-      "/images/products/obra-4.webp"
+      "/images/collections/derbake/derbake2-28b297738a01ceed-d3486af9a9.webp"
     ],
     "featured": false,
-    "stock": 1,
-    "isUniquePiece": true,
-    "content": {
-      "description": "Figura escultorica en arcilla roja con detalles pintados y una presencia ludica y ritual.",
-      "poeticDescription": "Una pieza narrativa, hecha a mano, que parece guardar una musica pequena y antigua.",
-      "materials": [
-        "Arcilla roja",
-        "Pigmentos minerales",
-        "Engobe amarillo"
-      ],
-      "dimensions": "20 cm alto x 12 cm ancho aproximado.",
-      "technique": "Modelado escultorico manual, aplicacion de volumenes y pintura de detalles.",
-      "careInstructions": [
-        "Objeto decorativo",
-        "Manipular con cuidado",
-        "Limpiar con pincel suave o pano seco"
-      ]
-    }
-  },
-  {
-    "id": "p-009",
-    "slug": "vasija-organica",
-    "name": "Vasija Organica",
-    "category": "Piezas únicas",
-    "priceARS": 78000,
-    "priceUSD": 86,
-    "images": [
-      "/images/products/obra-5.webp"
-    ],
-    "featured": false,
-    "stock": 1,
-    "isUniquePiece": true,
-    "content": {
-      "description": "Pieza escultorica de forma abierta, con volumen organico y superficie de arcilla natural.",
-      "poeticDescription": "Una forma libre, casi vegetal, que deja ver el gesto directo de la mano sobre la materia.",
-      "materials": [
-        "Arcilla roja",
-        "Engobe natural",
-        "Terminacion mate"
-      ],
-      "dimensions": "18 cm alto x 18 cm ancho aproximado.",
-      "technique": "Modelado manual por adicion, ahuecado y terminacion de superficie.",
-      "careInstructions": [
-        "Objeto decorativo",
-        "No usar con agua",
-        "Apoyar sobre superficie estable"
-      ]
-    }
-  },
-  {
-    "id": "p-010",
-    "slug": "vasija-espinas",
-    "name": "Vasija Espinas",
-    "category": "Piezas únicas",
-    "priceARS": 82000,
-    "priceUSD": 91,
-    "images": [
-      "/images/products/obra-6webp.webp"
-    ],
-    "featured": false,
-    "stock": 1,
-    "isUniquePiece": true,
-    "content": {
-      "description": "Vasija de cuerpo amplio con cuello texturado y pequenas puntas modeladas a mano.",
-      "poeticDescription": "Una pieza de presencia fuerte, entre recipiente antiguo y objeto de paisaje.",
-      "materials": [
-        "Arcilla roja",
-        "Engobe claro",
-        "Oxidos"
-      ],
-      "dimensions": "21 cm alto x 15 cm diametro aproximado.",
-      "technique": "Construccion manual, aplicacion de puntas y textura superficial.",
-      "careInstructions": [
-        "Objeto decorativo",
-        "Usar con flores secas",
-        "No sumergir"
-      ]
-    }
+    "isUniquePiece": true
   }
 ];
 
 export function getProducts(locale: Locale): Product[] {
- const t = getTranslator(locale);
- return productRecords.map(({content,...shared}) => ({...shared, description: t(content.description), poeticDescription: t(content.poeticDescription), materials: content.materials.map(key=>t(key)), dimensions: t(content.dimensions), technique: t(content.technique), careInstructions: content.careInstructions.map(key=>t(key))}));
+  const t = getTranslator(locale);
+  return productRecords.map(({ content, ...shared }) => ({
+    ...shared,
+    description: content ? t(content.description) : "",
+    poeticDescription: content ? t(content.poeticDescription) : "",
+    materials: content?.materials.map(key => t(key)) ?? [],
+    dimensions: content ? t(content.dimensions) : "",
+    technique: content ? t(content.technique) : "",
+    careInstructions: content?.careInstructions.map(key => t(key)) ?? [],
+  }));
 }
-export function getProductBySlug(slug: string, locale: Locale = "es") { return getProducts(locale).find(product=>product.slug===slug); }
+
+export function getProductBySlug(slug: string, locale: Locale = "es") {
+  return getProducts(locale).find(product => product.slug === slug);
+}
+
 export function getRelatedProducts(product: Product, limit = 3, locale: Locale = "es") {
- const products = getProducts(locale);
- return products.filter(item=>item.slug!==product.slug && item.category===product.category).concat(products.filter(item=>item.slug!==product.slug && item.category!==product.category)).slice(0,limit);
+  const products = getProducts(locale).filter(item => item.id !== product.id);
+  return products.filter(item => item.category === product.category)
+    .concat(products.filter(item => item.category !== product.category)).slice(0, limit);
 }

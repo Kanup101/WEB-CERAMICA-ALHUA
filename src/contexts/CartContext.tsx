@@ -3,11 +3,14 @@
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 import type { CartItem } from "@/types/cart";
 import type { Product } from "@/types/product";
+import { getProducts } from "@/data/products";
+import { useI18n } from "@/lib/i18n/provider";
+import { cartTotalUSD, reconcileCart } from "@/lib/cart";
 
 type CartContextValue = {
   items: CartItem[];
   totalItems: number;
-  totalARS: number;
+  totalUSD: number;
   addItem: (product: Product) => void;
   removeItem: (productId: string) => void;
   updateQuantity: (productId: string, quantity: number) => void;
@@ -18,6 +21,8 @@ const CartContext = createContext<CartContextValue | null>(null);
 const storageKey = "alhua-cart";
 
 export function CartProvider({ children }: { children: ReactNode }) {
+  const { locale } = useI18n();
+  const products = useMemo(() => getProducts(locale), [locale]);
   const [items, setItems] = useState<CartItem[]>([]);
   const [hydrated, setHydrated] = useState(false);
 
@@ -26,10 +31,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
       try {
         const storedCart = window.localStorage.getItem(storageKey);
         if (storedCart) {
-          const parsedItems = JSON.parse(storedCart) as CartItem[];
-          if (Array.isArray(parsedItems)) {
-            setItems(parsedItems);
-          }
+          setItems(reconcileCart(JSON.parse(storedCart), products));
         }
       } catch {
         window.localStorage.removeItem(storageKey);
@@ -37,7 +39,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
         setHydrated(true);
       }
     });
-  }, []);
+  }, [products]);
 
   useEffect(() => {
     if (!hydrated) return;
@@ -46,46 +48,29 @@ export function CartProvider({ children }: { children: ReactNode }) {
 
   const value = useMemo<CartContextValue>(() => {
     const totalItems = items.reduce((sum, item) => sum + item.quantity, 0);
-    const totalARS = items.reduce((sum, item) => sum + item.product.priceARS * item.quantity, 0);
+    const totalUSD = cartTotalUSD(items);
 
     return {
       items,
       totalItems,
-      totalARS,
+      totalUSD,
       addItem(product) {
-        if (product.stock <= 0) return;
-
-        setItems((current) => {
-          const existing = current.find((item) => item.product.id === product.id);
-          if (existing) {
-            return current.map((item) =>
-              item.product.id === product.id
-                ? { ...item, quantity: Math.min(item.quantity + 1, product.stock || 1) }
-                : item,
-            );
-          }
-          return [...current, { product, quantity: 1 }];
-        });
+        setItems(current => reconcileCart([...current, { product, quantity: 1 }], products));
       },
       removeItem(productId) {
         setItems((current) => current.filter((item) => item.product.id !== productId));
       },
       updateQuantity(productId, quantity) {
-        setItems((current) =>
-          current
-            .map((item) =>
-              item.product.id === productId
-                ? { ...item, quantity: Math.min(Math.max(quantity, 1), item.product.stock || 1) }
-                : item,
-            )
-            .filter((item) => item.quantity > 0),
-        );
+        if (!Number.isSafeInteger(quantity)) return;
+        setItems(current => reconcileCart(current.map(item =>
+          item.product.id === productId ? { ...item, quantity: Math.max(quantity, 1) } : item,
+        ), products));
       },
       clearCart() {
         setItems([]);
       },
     };
-  }, [items]);
+  }, [items, products]);
 
   return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 }

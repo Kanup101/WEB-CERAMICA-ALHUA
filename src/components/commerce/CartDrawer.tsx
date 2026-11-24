@@ -9,7 +9,7 @@ import { createPortal } from "react-dom";
 export function CartDrawer() {
     const { t, money } = useI18n();
     const [open, setOpen] = useState(false);
-    const { items, totalARS, totalItems, removeItem, updateQuantity } = useCart();
+    const { items, totalUSD, totalItems, removeItem, updateQuantity } = useCart();
     return (<>
       <button type="button" onClick={() => setOpen(true)} className="relative inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#D8C3AA] bg-[#FFF9EF] text-[#4B4038] transition hover:bg-[#F0E5D6]" aria-label={t("Abrir carrito")}>
         <ShoppingBag className="h-5 w-5" aria-hidden="true"/>
@@ -40,8 +40,8 @@ export function CartDrawer() {
                       <div className="min-w-0 flex-1">
                         <h3 className="truncate font-medium text-[#342A24]">{item.product.name}</h3>
                         <p className="text-sm text-[#8B6E54]">
-                          {money(item.product.priceARS)} {t("por unidad")}</p>
-                        <p className="mt-1 text-sm font-semibold text-[#342A24]">{t("Subtotal")} {money(item.product.priceARS * item.quantity)}
+                          {money(item.product.priceUSD, "USD")} {t("por unidad")}</p>
+                        <p className="mt-1 text-sm font-semibold text-[#342A24]">{t("Subtotal")} {money(item.product.priceUSD * item.quantity, "USD")}
                         </p>
                         <div className="mt-3 flex items-center justify-between">
                           <div className="inline-flex items-center rounded-full border border-[#D8C3AA]">
@@ -70,7 +70,7 @@ export function CartDrawer() {
             <div className="border-t border-[#E1D1BB] p-5">
               <div className="flex items-center justify-between text-lg font-semibold text-[#342A24]">
                 <span>{t("Total")}</span>
-                <span>{money(totalARS)}</span>
+                <span>{money(totalUSD, "USD")}</span>
               </div>
               <Link href="/checkout" onClick={() => setOpen(false)} aria-disabled={!items.length} className={`mt-4 inline-flex h-12 w-full items-center justify-center rounded-full px-6 text-base font-medium transition ${items.length
                 ? "bg-[#6F4A39] text-[#FFF9EF] hover:bg-[#593A2D]"

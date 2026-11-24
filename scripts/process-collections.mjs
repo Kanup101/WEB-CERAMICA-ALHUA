@@ -61,6 +61,7 @@ async function main() {
     try {
       const info = identify(originalName);
       if (!info.slug) throw new Error('Nombre sin base identificable; requiere clasificación manual.');
+      const group = collectionGroup(info.slug);
       if (info.variant || info.edited || info.numbers[0] === 0) warnings.push(`${originalName}: numeración alternativa, edición o nombre sin número; conservado para revisión.`);
       const input = await fs.readFile(path.join(source, originalName));
       const digest = hash(input);
@@ -68,9 +69,11 @@ async function main() {
       const originalMetadata = { format: metadata.format, width: metadata.width, height: metadata.height, orientation: metadata.orientation ?? 1 };
       if (content.has(digest)) warnings.push(`${originalName}: duplicado binario de ${content.get(digest)}; ambos conservados.`);
       else content.set(digest, originalName);
-      const pixelHash = hash(await sharp(input).autoOrient().toColourspace('srgb').removeAlpha().raw().toBuffer());
+      const { data, info: oriented } = await sharp(input).autoOrient().toColourspace('srgb').raw().toBuffer({ resolveWithObject: true });
+      const pixelHash = hash(Buffer.concat([Buffer.from(`${oriented.width}x${oriented.height}x${oriented.channels}:`), data]));
       if (pixels.has(pixelHash)) warnings.push(`${originalName}: mismos píxeles que ${pixels.get(pixelHash)}; ambos conservados.`);
       else pixels.set(pixelHash, originalName);
+      if (settings[group]?.excluded) continue;
       const id = hash(originalName).slice(0, 16);
       const basename = `${slugify(path.posix.basename(originalName).replace(/\.[^.]+$/, ''))}-${id}-${digest.slice(0, 10)}`;
       const relative = `/images/collections/${info.slug}/${basename}.webp`;
@@ -88,9 +91,8 @@ async function main() {
         const thumb = await sharp(input).autoOrient().resize({ width: 720, height: 720, fit: 'inside', withoutEnlargement: true }).withIccProfile('srgb').webp({ quality: 88, effort: 6 }).toFile(thumbTarget);
         image = { id, src: relative, thumbnail, originalName, order: 0, width: result.width, height: result.height, alt: '', sourceHash: digest, recipe, originalBytes: input.length, optimizedBytes: result.size, thumbnailBytes: thumb.size };
       }
-      const group = collectionGroup(info.slug);
       if (!groups.has(group)) groups.set(group, { base: info.base, images: [] });
-      groups.get(group).images.push({ ...image, originalMetadata, sequence: info.numbers });
+      groups.get(group).images.push({ ...image, originalMetadata, sequence: info.numbers, pixelHash });
     } catch (error) { errors.push({ file: originalName, error: error.message }); console.error(originalName, error.message); }
   }
   // Preserve prior valid entries on individual failures; never delete generated photographs.
@@ -99,6 +101,7 @@ async function main() {
     const collection = previous.collections.find(c => c.images.some(i => i.originalName === error.file));
     if (old && collection) {
       const group = collectionGroup(collection.slug);
+      if (settings[group]?.excluded) continue;
       if (!groups.has(group)) groups.set(group, { base: collection.name, images: [] });
       groups.get(group).images.push({ ...old, sequence: identify(error.file).numbers });
     }
@@ -106,7 +109,23 @@ async function main() {
   const collections = [...groups].map(([slug, group], index) => {
     const override = settings[slug] ?? {};
     const name = override.name ?? ({ 'aros-collares': 'Aros y collares' }[slug] ?? group.base.charAt(0).toLocaleUpperCase('es') + group.base.slice(1));
-    const images = group.images.sort((a, b) => a.sequence[0] - b.sequence[0] || a.sequence[1] - b.sequence[1] || a.originalName.localeCompare(b.originalName, 'es', { numeric: true })).map((entry, order) => { const image = { ...entry }; delete image.sequence; return ({ ...image, order: override.imageOrder?.indexOf(image.originalName) >= 0 ? override.imageOrder.indexOf(image.originalName) : (override.imageOrder?.length ?? 0) + order, alt: name }); }).sort((a, b) => a.order - b.order);
+    const ordered = group.images.sort((a, b) => a.sequence[0] - b.sequence[0] || a.sequence[1] - b.sequence[1] || a.originalName.localeCompare(b.originalName, 'es', { numeric: true })).map((image, order) => {
+      const priority = override.imageOrder?.indexOf(image.originalName) ?? -1;
+      return { ...image, order: priority >= 0 ? priority : (override.imageOrder?.length ?? 0) + order, alt: name };
+    }).sort((a, b) => a.order - b.order);
+    const seen = new Set();
+    const images = [];
+    for (const entry of ordered) {
+      const { pixelHash, ...image } = entry;
+      delete image.sequence;
+      const fingerprint = pixelHash ?? image.sourceHash;
+      if (override.deduplicate && seen.has(fingerprint)) {
+        warnings.push(`${slug}: ${image.originalName} omitida de la galería por duplicado idéntico.`);
+        continue;
+      }
+      seen.add(fingerprint);
+      images.push(image);
+    }
     const cover = images.find(i => i.originalName === override.cover)?.id ?? images[0].id;
     if (override.cover && !images.some(i => i.originalName === override.cover)) warnings.push(`${slug}: portada configurada no encontrada; se usa la primera imagen.`);
     return { id: slug, slug, name, cover, order: override.order ?? index, published: override.published ?? true, images };

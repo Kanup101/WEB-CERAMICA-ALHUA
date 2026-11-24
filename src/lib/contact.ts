@@ -5,6 +5,8 @@ import type { Experience } from "@/types/experience";
 import type { Locale } from "@/lib/i18n/config";
 import { formatMoney } from "@/lib/i18n/config";
 import { getTranslator } from "@/lib/i18n/messages";
+import { getProducts } from "@/data/products";
+import { cartTotalUSD, reconcileCart } from "@/lib/cart";
 
 export const contactInfo = {
   whatsappPhone: "5493874669134",
@@ -26,22 +28,24 @@ export function experienceWhatsAppMessage(experience: Experience, locale: Locale
 
 export function productWhatsAppMessage(product: Product, locale: Locale = "es") {
   const t = getTranslator(locale);
-  return t("Consulta de producto: {name}. Categoría: {category}. Precio publicado: {price}.", { name: product.name, category: t(product.category), price: formatMoney(product.priceARS, "ARS", locale) });
+  if (product.priceUSD === null) {
+    return t("Consulta de producto: {name}. Quisiera confirmar el precio y la disponibilidad.", { name: product.name });
+  }
+  return t("Consulta de producto: {name}. Categoría: {category}. Precio publicado: {price}.", { name: product.name, category: t(product.category), price: formatMoney(product.priceUSD, "USD", locale) });
 }
 
 export function workshopWhatsAppMessage(workshop: Workshop, locale: Locale = "es") {
   return getTranslator(locale)("Consulta de taller: {title}. Modalidad: {modality}. Precio publicado: {price}. Quiero consultar disponibilidad y cómo reservar.", { title: workshop.title, modality: workshop.modality, price: formatMoney(workshop.priceARS, "ARS", locale) });
 }
 
-export function checkoutWhatsAppMessage(items: CartItem[], totalARS: number, locale: Locale = "es") {
+export function checkoutWhatsAppMessage(items: CartItem[], locale: Locale = "es") {
   const t = getTranslator(locale);
-  if (!items.length) {
-    return t("Hola Yanina, quiero consultar por una compra.");
-  }
+  const selection = reconcileCart(items, getProducts(locale));
+  if (!selection.length) return null;
 
-  const summary = items
-    .map((item) => `${item.quantity} x ${item.product.name}`)
+  const summary = selection
+    .map(({ product, quantity }) => `${quantity} x ${product.name} (${formatMoney(product.priceUSD * quantity, "USD", locale)})`)
     .join(", ");
 
-  return t("Hola Yanina, quiero finalizar mi compra. Selección: {summary}. Total publicado: {total}.", { summary, total: formatMoney(totalARS, "ARS", locale) });
+  return t("Hola Yanina, quiero finalizar mi compra. Selección: {summary}. Total publicado: {total}.", { summary, total: formatMoney(cartTotalUSD(selection), "USD", locale) });
 }

@@ -13,13 +13,13 @@ for (const artwork of artworkRecords) {
   for (const image of artwork.images) {
     assert.ok(!photographs.has(image.originalName), `Image belongs to multiple artworks: ${image.originalName}`);
     photographs.add(image.originalName);
-    assert.ok(collectionRecords.some(collection => collection.images.some(photo => photo.originalName === image.originalName)));
+    assert.ok(collectionRecords.some(collection => collection.slug === artwork.collectionSlug && collection.images.some(photo => photo.originalName === image.originalName)));
     for (const locale of locales) {
       assert.ok(dictionaries[locale][artwork.visualComposition]);
       assert.ok(dictionaries[locale][image.visualDescription]);
       assert.ok(dictionaries[locale][image.alt]);
       const content = getPhotoContent(image.originalName, getTranslator(locale));
-      assert.equal(content.alt, dictionaries[locale][image.alt]);
+      assert.equal(content.alt, `${artwork.title}. ${dictionaries[locale][image.alt]}`);
       assert.equal(content.description, dictionaries[locale][image.visualDescription]);
     }
   }

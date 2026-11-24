@@ -56,11 +56,11 @@
     ]
   },
   {
-    "id": "boca-01",
-    "title": "Boca de loca",
-    "titleIsEditorial": true,
-    "collectionSlug": "bocadeloca",
-    "visualComposition": "artwork.photo.boca-1",
+    "id": "el-beso",
+    "title": "El beso",
+    "titleIsEditorial": false,
+    "collectionSlug": "el-beso",
+    "visualComposition": "artwork.photo.el-beso-1",
     "materials": [],
     "mainMaterial": null,
     "complementaryMaterials": [],
@@ -78,8 +78,18 @@
     "images": [
       {
         "originalName": "bocadeloca.png",
-        "alt": "artwork.photo.boca-1",
-        "visualDescription": "artwork.photo.boca-1"
+        "alt": "artwork.photo.el-beso-1",
+        "visualDescription": "artwork.photo.el-beso-1"
+      },
+      {
+        "originalName": "pichuda2.png",
+        "alt": "artwork.photo.el-beso-3",
+        "visualDescription": "artwork.photo.el-beso-3"
+      },
+      {
+        "originalName": "pinchuda1.png",
+        "alt": "artwork.photo.el-beso-2",
+        "visualDescription": "artwork.photo.el-beso-2"
       }
     ]
   },
@@ -146,9 +156,9 @@
   },
   {
     "id": "figura-01",
-    "title": "Figura · 01",
+    "title": "Paisajes del valle · 01",
     "titleIsEditorial": true,
-    "collectionSlug": "figura",
+    "collectionSlug": "paisajes-del-valle",
     "visualComposition": "artwork.photo.figura-1",
     "materials": [],
     "mainMaterial": null,
@@ -179,9 +189,9 @@
   },
   {
     "id": "figura-03",
-    "title": "Figura · 03",
+    "title": "Paisajes del valle · 03",
     "titleIsEditorial": true,
-    "collectionSlug": "figura",
+    "collectionSlug": "paisajes-del-valle",
     "visualComposition": "artwork.photo.figura-3",
     "materials": [],
     "mainMaterial": null,
@@ -207,9 +217,9 @@
   },
   {
     "id": "figura-04",
-    "title": "Figura · 04",
+    "title": "Paisajes del valle · 04",
     "titleIsEditorial": true,
-    "collectionSlug": "figura",
+    "collectionSlug": "paisajes-del-valle",
     "visualComposition": "artwork.photo.figura-4",
     "materials": [],
     "mainMaterial": null,
@@ -235,9 +245,9 @@
   },
   {
     "id": "figura-05",
-    "title": "Figura · 05",
+    "title": "Paisajes del valle · 05",
     "titleIsEditorial": true,
-    "collectionSlug": "figura",
+    "collectionSlug": "paisajes-del-valle",
     "visualComposition": "artwork.photo.figura-5",
     "materials": [],
     "mainMaterial": null,
@@ -263,9 +273,9 @@
   },
   {
     "id": "figura-06",
-    "title": "Figura · 06",
+    "title": "Paisajes del valle · 06",
     "titleIsEditorial": true,
-    "collectionSlug": "figura",
+    "collectionSlug": "paisajes-del-valle",
     "visualComposition": "artwork.photo.figura-6",
     "materials": [],
     "mainMaterial": null,
@@ -319,9 +329,9 @@
   },
   {
     "id": "mascara-01",
-    "title": "Máscara",
-    "titleIsEditorial": true,
-    "collectionSlug": "mascara",
+    "title": "Máscara ritual jaguar",
+    "titleIsEditorial": false,
+    "collectionSlug": "mascara-ritual-jaguar",
     "visualComposition": "artwork.photo.mascara-1",
     "materials": [],
     "mainMaterial": null,
@@ -346,67 +356,11 @@
     ]
   },
   {
-    "id": "obra-02",
-    "title": "Obra · 02",
-    "titleIsEditorial": true,
-    "collectionSlug": "obra",
-    "visualComposition": "artwork.photo.obra-2",
-    "materials": [],
-    "mainMaterial": null,
-    "complementaryMaterials": [],
-    "techniques": [],
-    "modelingTechnique": null,
-    "surfaceTreatment": null,
-    "glazesOrPigments": null,
-    "firingTechnique": null,
-    "artistIntent": null,
-    "artistIntentVerified": false,
-    "function": null,
-    "curatorialReading": null,
-    "verificationSources": [],
-    "reviewStatus": "visual-observed-pending-artist",
-    "images": [
-      {
-        "originalName": "Obra 2.png",
-        "alt": "artwork.photo.obra-2",
-        "visualDescription": "artwork.photo.obra-2"
-      }
-    ]
-  },
-  {
-    "id": "obra-03",
-    "title": "Obra · 03",
-    "titleIsEditorial": true,
-    "collectionSlug": "obra",
-    "visualComposition": "artwork.photo.obra-3",
-    "materials": [],
-    "mainMaterial": null,
-    "complementaryMaterials": [],
-    "techniques": [],
-    "modelingTechnique": null,
-    "surfaceTreatment": null,
-    "glazesOrPigments": null,
-    "firingTechnique": null,
-    "artistIntent": null,
-    "artistIntentVerified": false,
-    "function": null,
-    "curatorialReading": null,
-    "verificationSources": [],
-    "reviewStatus": "visual-observed-pending-artist",
-    "images": [
-      {
-        "originalName": "Obra 3.png",
-        "alt": "artwork.photo.obra-3",
-        "visualDescription": "artwork.photo.obra-3"
-      }
-    ]
-  },
-  {
     "id": "vasija-01",
-    "title": "Vasija silvadora",
-    "titleIsEditorial": true,
-    "collectionSlug": "vasija-silvadora",
-    "visualComposition": "artwork.photo.obra-4",
+    "title": "Soplo al sol",
+    "titleIsEditorial": false,
+    "collectionSlug": "soplo-al-sol",
+    "visualComposition": "artwork.photo.vasija-1",
     "materials": [],
     "mainMaterial": null,
     "complementaryMaterials": [],
@@ -422,11 +376,6 @@
     "verificationSources": [],
     "reviewStatus": "visual-observed-pending-artist",
     "images": [
-      {
-        "originalName": "Obra 4.jpg",
-        "alt": "artwork.photo.obra-4",
-        "visualDescription": "artwork.photo.obra-4"
-      },
       {
         "originalName": "Vasija silvadora 1.jpg",
         "alt": "artwork.photo.vasija-1",
@@ -445,66 +394,10 @@
     ]
   },
   {
-    "id": "obra-05",
-    "title": "Obra · 05",
-    "titleIsEditorial": true,
-    "collectionSlug": "obra",
-    "visualComposition": "artwork.photo.obra-5",
-    "materials": [],
-    "mainMaterial": null,
-    "complementaryMaterials": [],
-    "techniques": [],
-    "modelingTechnique": null,
-    "surfaceTreatment": null,
-    "glazesOrPigments": null,
-    "firingTechnique": null,
-    "artistIntent": null,
-    "artistIntentVerified": false,
-    "function": null,
-    "curatorialReading": null,
-    "verificationSources": [],
-    "reviewStatus": "visual-observed-pending-artist",
-    "images": [
-      {
-        "originalName": "Obra 5.png",
-        "alt": "artwork.photo.obra-5",
-        "visualDescription": "artwork.photo.obra-5"
-      }
-    ]
-  },
-  {
-    "id": "obra-06",
-    "title": "Obra · 06",
-    "titleIsEditorial": true,
-    "collectionSlug": "obra",
-    "visualComposition": "artwork.photo.obra-6",
-    "materials": [],
-    "mainMaterial": null,
-    "complementaryMaterials": [],
-    "techniques": [],
-    "modelingTechnique": null,
-    "surfaceTreatment": null,
-    "glazesOrPigments": null,
-    "firingTechnique": null,
-    "artistIntent": null,
-    "artistIntentVerified": false,
-    "function": null,
-    "curatorialReading": null,
-    "verificationSources": [],
-    "reviewStatus": "visual-observed-pending-artist",
-    "images": [
-      {
-        "originalName": "Obra 6.png",
-        "alt": "artwork.photo.obra-6",
-        "visualDescription": "artwork.photo.obra-6"
-      }
-    ]
-  },
-  {
     "id": "ojo-01",
-    "title": "Ojo de loca",
-    "titleIsEditorial": true,
-    "collectionSlug": "ojodeloca",
+    "title": "Cuando la tierra me mira",
+    "titleIsEditorial": false,
+    "collectionSlug": "cuando-la-tierra-me-mira",
     "visualComposition": "artwork.photo.ojo-1",
     "materials": [],
     "mainMaterial": null,
@@ -539,43 +432,10 @@
     ]
   },
   {
-    "id": "pinchuda-01",
-    "title": "Pinchuda",
-    "titleIsEditorial": true,
-    "collectionSlug": "pinchuda",
-    "visualComposition": "artwork.photo.pinchuda-2",
-    "materials": [],
-    "mainMaterial": null,
-    "complementaryMaterials": [],
-    "techniques": [],
-    "modelingTechnique": null,
-    "surfaceTreatment": null,
-    "glazesOrPigments": null,
-    "firingTechnique": null,
-    "artistIntent": null,
-    "artistIntentVerified": false,
-    "function": null,
-    "curatorialReading": null,
-    "verificationSources": [],
-    "reviewStatus": "visual-observed-pending-artist",
-    "images": [
-      {
-        "originalName": "pichuda2.png",
-        "alt": "artwork.photo.pinchuda-2",
-        "visualDescription": "artwork.photo.pinchuda-2"
-      },
-      {
-        "originalName": "pinchuda1.png",
-        "alt": "artwork.photo.pinchuda-1",
-        "visualDescription": "artwork.photo.pinchuda-1"
-      }
-    ]
-  },
-  {
     "id": "tambor-01",
-    "title": "Tambor",
-    "titleIsEditorial": true,
-    "collectionSlug": "tambor",
+    "title": "Tambor ceremonial",
+    "titleIsEditorial": false,
+    "collectionSlug": "tambor-ceremonial",
     "visualComposition": "artwork.photo.tambor-1",
     "materials": [],
     "mainMaterial": null,
@@ -667,9 +527,9 @@
   },
   {
     "id": "peluca-01",
-    "title": "Vasija silvadora peluca",
-    "titleIsEditorial": true,
-    "collectionSlug": "vasijasilvadora-peluca",
+    "title": "Vasija silbadora ritual",
+    "titleIsEditorial": false,
+    "collectionSlug": "vasija-silbadora-ritual",
     "visualComposition": "artwork.photo.peluca-1",
     "materials": [],
     "mainMaterial": null,
@@ -715,9 +575,9 @@
   },
   {
     "id": "picolargo-01",
-    "title": "Vasija silvadora picolargo",
-    "titleIsEditorial": true,
-    "collectionSlug": "vasijasilvadora-picolargo",
+    "title": "El canto del pájaro",
+    "titleIsEditorial": false,
+    "collectionSlug": "el-canto-del-pajaro",
     "visualComposition": "artwork.photo.picolargo-1",
     "materials": [],
     "mainMaterial": null,

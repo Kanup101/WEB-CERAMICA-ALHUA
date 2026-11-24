@@ -1,14 +1,80 @@
 {
-  "pichuda": { "mergeInto": "pinchuda" },
-  "pinchuda": { "name": "Pinchuda", "order": 5, "imageOrder": ["pinchuda1.png", "pichuda2.png"] },
-  "aros-collares": { "published": false },
-  "obra": { "order": 1, "cover": "Obra 2.png" },
-  "antaras": { "order": 2 },
-  "figura": { "order": 3, "cover": "figura3.png" },
-  "copas": { "order": 4 },
-  "bocadeloca": { "name": "Boca de loca" },
-  "mascara": { "name": "Máscara" },
-  "ojodeloca": { "name": "Ojo de loca", "order": 0 },
-  "vasijasilvadora-peluca": { "name": "Vasija silvadora peluca", "order": 6 },
-  "vasijasilvadora-picolargo": { "name": "Vasija silvadora picolargo" }
+  "pichuda": {
+    "mergeInto": "el-beso"
+  },
+  "pinchuda": {
+    "mergeInto": "el-beso"
+  },
+  "aros-collares": {
+    "published": false
+  },
+  "obra": {
+    "excluded": true
+  },
+  "antaras": {
+    "order": 2
+  },
+  "figura": {
+    "mergeInto": "paisajes-del-valle"
+  },
+  "copas": {
+    "order": 4
+  },
+  "bocadeloca": {
+    "mergeInto": "el-beso"
+  },
+  "mascara": {
+    "mergeInto": "mascara-ritual-jaguar"
+  },
+  "ojodeloca": {
+    "mergeInto": "cuando-la-tierra-me-mira"
+  },
+  "vasijasilvadora-peluca": {
+    "mergeInto": "vasija-silbadora-ritual"
+  },
+  "vasijasilvadora-picolargo": {
+    "mergeInto": "el-canto-del-pajaro"
+  },
+  "el-beso": {
+    "name": "El beso",
+    "order": 5,
+    "cover": "bocadeloca.png",
+    "imageOrder": [
+      "bocadeloca.png",
+      "pinchuda1.png",
+      "pichuda2.png"
+    ],
+    "deduplicate": true
+  },
+  "cuando-la-tierra-me-mira": {
+    "name": "Cuando la tierra me mira",
+    "order": 0
+  },
+  "paisajes-del-valle": {
+    "order": 3,
+    "cover": "figura3.png",
+    "name": "Paisajes del valle"
+  },
+  "el-canto-del-pajaro": {
+    "name": "El canto del pájaro"
+  },
+  "mascara-ritual-jaguar": {
+    "name": "Máscara ritual jaguar"
+  },
+  "tambor-ceremonial": {
+    "name": "Tambor ceremonial"
+  },
+  "tambor": {
+    "mergeInto": "tambor-ceremonial"
+  },
+  "soplo-al-sol": {
+    "name": "Soplo al sol"
+  },
+  "vasija-silvadora": {
+    "mergeInto": "soplo-al-sol"
+  },
+  "vasija-silbadora-ritual": {
+    "name": "Vasija silbadora ritual",
+    "order": 6
+  }
 }

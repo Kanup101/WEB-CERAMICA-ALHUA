@@ -22,11 +22,11 @@ export function ProductCard({ product }: {
             <p className="text-xs uppercase tracking-[0.12em] text-[#8B6E54]">{t(product.category)}</p>
             <h3 className="mt-1 text-xl font-semibold text-[#342A24]">{product.name}</h3>
           </div>
-          <StockBadge stock={product.stock} isUniquePiece={product.isUniquePiece}/>
+          <StockBadge product={product}/>
         </div>
-        <p className="line-clamp-2 text-sm leading-6 text-[#6C5C50]">{product.description}</p>
+        {product.description && <p className="line-clamp-2 text-sm leading-6 text-[#6C5C50]">{product.description}</p>}
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-lg font-semibold text-[#6F4A39]">{money(product.priceARS)}</p>
+          {product.priceUSD !== null && <p className="text-lg font-semibold text-[#6F4A39]">{money(product.priceUSD, "USD")}</p>}
           <ButtonLink href={`/tienda/${product.slug}`} variant="outline" size="sm" className="w-full sm:w-auto">{t("Ver detalle")}<ArrowRight className="ml-2 h-4 w-4" aria-hidden="true"/>
           </ButtonLink>
         </div>

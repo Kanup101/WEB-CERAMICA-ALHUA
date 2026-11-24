@@ -77,14 +77,16 @@ for (const locale of locales) {
   assert.equal(getExperiences(locale).find(item => item.slug === "barro-mates-y-encuentros").priceUSD, 35);
   for (const product of getProducts(locale)) {
     const original = productRecords.find(item => item.id === product.id);
-    for (const field of ["id", "slug", "name", "priceARS", "priceUSD", "stock", "images", "category"]) assert.deepEqual(product[field], original[field]);
+    for (const field of ["id", "slug", "name", "priceUSD", "stock", "images", "category"]) assert.deepEqual(product[field], original[field]);
   }
   for (const workshop of getWorkshops(locale)) {
     const original = workshopRecords.find(item => item.id === workshop.id);
     for (const field of ["id", "slug", "priceARS", "priceUSD", "availableSpots", "image"]) assert.deepEqual(workshop[field], original[field]);
   }
-  const product = getProducts(locale)[0], workshop = getWorkshops(locale)[0], experience = getExperiences(locale)[0];
-  const messages = [dictionaries[locale]["Hola Yanina, quiero hacer una consulta."], contact.productWhatsAppMessage(product, locale), contact.workshopWhatsAppMessage(workshop, locale), contact.experienceWhatsAppMessage(experience, locale), contact.checkoutWhatsAppMessage([{ product, quantity: 2 }], product.priceARS * 2, locale)];
+  const product = getProducts(locale).find(item => item.slug === "fuente-venas");
+  const workshop = getWorkshops(locale)[0], experience = getExperiences(locale)[0];
+  const messages = [dictionaries[locale]["Hola Yanina, quiero hacer una consulta."], contact.productWhatsAppMessage(product, locale), contact.workshopWhatsAppMessage(workshop, locale), contact.experienceWhatsAppMessage(experience, locale), contact.checkoutWhatsAppMessage([{ product, quantity: 2 }], locale)];
+  assert.ok(messages[4].includes(formatMoney(500, "USD", locale)));
   for (const message of messages) {
     const url = new URL(contact.whatsappHref(message));
     assert.equal(url.pathname, "/5493874669134");

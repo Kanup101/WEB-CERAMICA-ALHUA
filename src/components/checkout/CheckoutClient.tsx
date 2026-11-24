@@ -9,8 +9,8 @@ import { useCart } from "@/contexts/CartContext";
 import { checkoutWhatsAppMessage } from "@/lib/contact";
 export function CheckoutClient() {
     const { t, locale, money } = useI18n();
-    const { items, totalARS } = useCart();
-    const whatsappMessage = checkoutWhatsAppMessage(items, totalARS, locale);
+    const { items, totalUSD } = useCart();
+    const whatsappMessage = checkoutWhatsAppMessage(items, locale);
     return (<div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
       <SectionTitle eyebrow={t("Checkout")} title={t("Resumen de compra")} description={t("El checkout online estara disponible proximamente. Por ahora podes finalizar tu compra por WhatsApp con el resumen ya preparado.")}/>
 
@@ -26,9 +26,9 @@ export function CheckoutClient() {
                     <p className="text-xs uppercase tracking-[0.12em] text-[#8B6E54]">{t(item.product.category)}</p>
                     <h3 className="mt-1 font-semibold text-[#342A24]">{item.product.name}</h3>
                     <p className="mt-2 text-sm text-[#6C5C50]">
-                      {item.quantity} x {money(item.product.priceARS)}
+                      {item.quantity} x {money(item.product.priceUSD, "USD")}
                     </p>
-                    <p className="mt-1 font-semibold text-[#6F4A39]">{t("Subtotal")} {money(item.product.priceARS * item.quantity)}
+                    <p className="mt-1 font-semibold text-[#6F4A39]">{t("Subtotal")} {money(item.product.priceUSD * item.quantity, "USD")}
                     </p>
                   </div>
                 </article>))}
@@ -41,10 +41,10 @@ export function CheckoutClient() {
 
         <aside className="h-fit rounded-3xl border border-[#E1D1BB] bg-[#3B3029] p-6 text-[#FFF9EF]">
           <p className="text-sm uppercase tracking-[0.16em] text-[#D8B79C]">{t("Total general")}</p>
-          <p className="mt-3 text-4xl font-semibold">{money(totalARS)}</p>
+          <p className="mt-3 text-4xl font-semibold">{money(totalUSD, "USD")}</p>
           <p className="mt-5 text-sm leading-6 text-[#E7D2BA]">{t("El checkout online estara disponible proximamente. Por ahora podes finalizar tu compra por WhatsApp y coordinamos disponibilidad, envio o retiro de forma manual.")}</p>
           <div className="mt-6 flex flex-col gap-3">
-            <WhatsAppButton message={whatsappMessage} label={t("Finalizar por WhatsApp")}/>
+            {whatsappMessage && <WhatsAppButton message={whatsappMessage} label={t("Finalizar por WhatsApp")}/>}
             <ButtonLink href="/tienda" variant="outline" className="border-[#D8B79C] text-[#FFF9EF] hover:bg-white/10">{t("Seguir viendo piezas")}</ButtonLink>
           </div>
           <div className="mt-6 rounded-2xl bg-white/10 p-4 text-sm leading-6 text-[#F4E8D9]">{t("Estructura preparada para futura integracion con Mercado Pago y Stripe, sin claves reales ni pagos activos.")}</div>

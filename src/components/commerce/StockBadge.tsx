@@ -1,13 +1,13 @@
 "use client";
 import { useI18n } from "@/lib/i18n/provider";
 import { Badge } from "@/components/ui/badge";
-export function StockBadge({ stock, isUniquePiece }: {
-    stock: number;
-    isUniquePiece?: boolean;
-}) {
+import type { Product } from "@/types/product";
+export function StockBadge({ product }: { product: Product }) {
     const { t } = useI18n();
-    if (stock <= 0) {
-        return <Badge className="border-[#C9B2A0] bg-[#EFE4DA] text-[#76685F]">{t("Sin stock")}</Badge>;
+    const { stock, isUniquePiece, priceUSD } = product;
+    if (stock === 0 || stock === null || priceUSD === null) {
+        const label = stock === 0 ? t("Vendida") : priceUSD === null ? t("Precio a confirmar") : t("Disponibilidad a confirmar");
+        return <Badge className="border-[#C9B2A0] bg-[#EFE4DA] text-[#76685F]">{label}</Badge>;
     }
     if (isUniquePiece) {
         return <Badge className="border-[#B97859] bg-[#F4E2D4] text-[#7A513C]">{t("Pieza unica")}</Badge>;

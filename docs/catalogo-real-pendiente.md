@@ -1,5 +1,21 @@
 # Catalogo real pendiente
 
+## Estado comercial vigente — Etapa 9A
+
+| Producto | Precio (USD) | Disponibilidad |
+| --- | ---: | --- |
+| Vasija Puntas | 300 | Vendida |
+| Soplo al sol | 150 | Disponible |
+| Tambor ceremonial | 145 | Disponible |
+| Luminaria Geométrica | 105 | Disponible |
+| Fuente Venas | 250 | Disponible |
+| Derbake | 250 | A confirmar |
+| Taza Biblioteca | A confirmar | Consulta de precio y disponibilidad |
+
+Se retiraron Luminaria Corteza, Vasija Orgánica, Vasija Espinas y Vasija Silvadora II (antes Figura Flautista). Sus rutas devuelven 404 y las fotos se conservan. Se detectaron tres coincidencias exactas entre imágenes principales. Soplo al sol comparte foto con Vasija Silvadora II, Fuente Venas con Vasija Orgánica y Vasija Puntas con Vasija Espinas. Las fichas que permanecen conservan sus galerías.
+
+Derbake reutiliza la foto de la colección artística. Quedan pendientes su disponibilidad y sus especificaciones. La prueba `npm.cmd run test:commerce` revisa valores, identidades de obra, nombres, slugs, imágenes y carritos históricos. La matriz siguiente conserva el relevamiento inicial.
+
 Matriz editable para cerrar datos reales antes del deploy del MVP frontend de **Yanina Cardozo | Ceramica creativa**.
 
 Este documento no reemplaza a `src/data/products.ts` ni a `src/data/workshops.ts`. Sirve como hoja de control para confirmar nombres, precios, stock, medidas, tecnicas, materiales, cuidados, fotos y datos comerciales reales antes de pasar a una etapa de backend, CMS o pagos.

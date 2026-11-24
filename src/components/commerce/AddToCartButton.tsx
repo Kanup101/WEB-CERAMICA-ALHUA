@@ -5,17 +5,19 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/contexts/CartContext";
 import type { Product } from "@/types/product";
+import { canPurchase } from "@/lib/cart";
 export function AddToCartButton({ product }: {
     product: Product;
 }) {
     const { t } = useI18n();
     const { addItem } = useCart();
     const [added, setAdded] = useState(false);
-    return (<Button size="lg" disabled={product.stock <= 0} onClick={() => {
+    if (!canPurchase(product)) return null;
+    return (<Button size="lg" onClick={() => {
             addItem(product);
             setAdded(true);
         }}>
       <ShoppingBag className="mr-2 h-4 w-4" aria-hidden="true"/>
-      {product.stock <= 0 ? t("Sin stock") : added ? t("Agregado") : t("Agregar al carrito")}
+      {added ? t("Agregado") : t("Agregar al carrito")}
     </Button>);
 }

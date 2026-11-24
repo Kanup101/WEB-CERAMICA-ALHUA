@@ -31,7 +31,7 @@ export function CollectionGrid({ featured = false }: { featured?: boolean }) {
   const { t } = useI18n();
   const collections = getCollections();
   // A deliberately composed selection; independent from the commercial inventory.
-  const selection = featured ? ["ojodeloca", "figura", "vasijasilvadora-peluca"].map(slug => collections.find(item => item.slug === slug)).filter((item): item is Collection => !!item) : collections;
+  const selection = featured ? ["cuando-la-tierra-me-mira", "paisajes-del-valle", "vasija-silbadora-ritual"].map(slug => collections.find(item => item.slug === slug)).filter((item): item is Collection => !!item) : collections;
   return <>
     {!selection.length && <p>{t("Colecciones próximamente")}</p>}
     <div className={featured ? "editorial-grid feature-grid" : "editorial-grid"}>

@@ -1,4 +1,27 @@
-# Catálogo de colecciones — Etapa 7B
+# Catálogo de colecciones
+
+## Estado vigente — Etapa 9A
+
+El catálogo contiene 14 colecciones públicas con 35 fotografías. Aros y collares sigue oculta con sus 18 fotografías.
+
+| Nombre anterior | Título oficial | Slug vigente |
+| --- | --- | --- |
+| Boca de loca, Pinchuda y Pichuda | El beso | `el-beso` |
+| Ojo de loca | Cuando la tierra me mira | `cuando-la-tierra-me-mira` |
+| Figura | Paisajes del valle | `paisajes-del-valle` |
+| Vasija silvadora picolargo | El canto del pájaro | `el-canto-del-pajaro` |
+| Máscara | Máscara ritual jaguar | `mascara-ritual-jaguar` |
+| Tambor | Tambor ceremonial | `tambor-ceremonial` |
+| Vasija silvadora | Soplo al sol | `soplo-al-sol` |
+| Vasija silvadora peluca | Vasija silbadora ritual | `vasija-silbadora-ritual` |
+
+El beso usa `bocadeloca.png` como portada, seguida por `pinchuda1.png` y `pichuda2.png`. El procesador agrupa los nombres de archivo anteriores con la configuración editorial y filtra imágenes idénticas de esa galería después de aplicar el orden configurado. Las rutas anteriores redirigen con HTTP 308 a las vigentes en cada idioma.
+
+Obra queda excluida del manifiesto y sus rutas devuelven 404. Los cinco originales permanecen como respaldo. `Obra 4.jpg` coincide byte por byte con `Vasija silvadora 1.jpg`, que sigue en Soplo al sol. Las demás fotografías de Obra siguen en su carpeta de origen.
+
+El beso se presenta como una sola obra en Colecciones. Los precios y las bajas de la tienda se documentan en el [estado comercial vigente](catalogo-real-pendiente.md#estado-comercial-vigente--etapa-9a).
+
+## Historial de la etapa 7B
 
 ## Estado actual
 

@@ -24,23 +24,23 @@ export default function ProductDetailPage({ slug }: {
         <div className="lg:pt-8">
           <p className="text-sm uppercase tracking-[0.16em] text-[#8B6E54]">{t(product.category)}</p>
           <h1 className="mt-3 font-serif text-4xl font-semibold tracking-tight text-[#342A24] sm:text-5xl">{product.name}</h1>
-          <p className="mt-5 text-2xl font-semibold text-[#6F4A39]">{money(product.priceARS)}</p>
+          {product.priceUSD !== null && <p className="mt-5 text-2xl font-semibold text-[#6F4A39]">{money(product.priceUSD, "USD")}</p>}
           <div className="mt-5">
-            <StockBadge stock={product.stock} isUniquePiece={product.isUniquePiece}/>
+            <StockBadge product={product}/>
           </div>
-          <p className="mt-8 text-xl leading-8 text-[#4B4038]">{product.poeticDescription}</p>
-          <p className="mt-4 leading-7 text-[#6C5C50]">{product.description}</p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+          {product.poeticDescription && <p className="mt-8 text-xl leading-8 text-[#4B4038]">{product.poeticDescription}</p>}
+          {product.description && <p className="mt-4 leading-7 text-[#6C5C50]">{product.description}</p>}
+          {product.stock !== 0 && <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <AddToCartButton product={product}/>
             <WhatsAppButton message={productWhatsAppMessage(product, locale)} label={t("Consultar esta pieza")}/>
-          </div>
+          </div>}
 
-          <div className="mt-10 grid gap-5 rounded-3xl border border-[#E1D1BB] bg-[#FFF9EF] p-5 text-sm leading-6 text-[#6C5C50] shadow-[0_18px_60px_rgba(74,55,40,0.06)] sm:p-6">
+          {product.materials.length > 0 && <div className="mt-10 grid gap-5 rounded-3xl border border-[#E1D1BB] bg-[#FFF9EF] p-5 text-sm leading-6 text-[#6C5C50] shadow-[0_18px_60px_rgba(74,55,40,0.06)] sm:p-6">
             <Info title={t("Materiales")} items={product.materials}/>
             <Info title={t("Medidas")} items={[product.dimensions]}/>
             <Info title={t("Tecnica")} items={[product.technique]}/>
             <Info title={t("Cuidados")} items={product.careInstructions}/>
-          </div>
+          </div>}
         </div>
       </div>
 

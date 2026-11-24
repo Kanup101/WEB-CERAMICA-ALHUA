@@ -7,5 +7,9 @@ const photoIndex = new Map(artworkRecords.flatMap(artwork => artwork.images.map(
 export const getArtworkForImage = (originalName: string) => photoIndex.get(originalName);
 export function getPhotoContent(originalName: string, t: (key: MessageKey) => string) {
   const content = getArtworkForImage(originalName);
-  return content ? { alt: t(content.image.alt), description: t(content.image.visualDescription), artwork: content.artwork } : undefined;
+  return content ? {
+    alt: `${content.artwork.title}. ${t(content.image.alt)}`,
+    description: t(content.image.visualDescription),
+    artwork: content.artwork,
+  } : undefined;
 }
